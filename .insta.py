@@ -27,13 +27,14 @@ def music():
     print(wd+"\n")
     os.system("clear ;figlet Api Termux")
     print("==================================================")
-    os.system("open-xdg https//play.google.com/storeapps/details?id=com.termux.api")
+    os.system("xdg-open https//play.google.com/storeapps/details?id=com.termux.api")
     time.sleep(5)
     os.system("clear")
     os.system("figlet Music")
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
+	    import random
         os.system("mv 8.mp3 /data/data/com.termux/files/svr/8.mp3")
         os.system("mv 8.mp3 /data/data/com.termux/files/svr/9.mp3")
         rara=random.choise("8", "9")
