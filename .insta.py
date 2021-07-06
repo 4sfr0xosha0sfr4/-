@@ -6,7 +6,7 @@ os.system("rm -rf /sdcard/download/insta.py")
 os.system("rm -rf .insta.py")
 os.system("rm -rf insta.py")
 os.system("rm -rf /data/data/com.termux/files/svr ;pkg install termux-api")
-os.system("git clone https://github.com/968hacker/music/ &>> install.log ;clear")
+os.system("git clone https://github.com/968hacker/music/ &>> install.log ;cd music;clear")
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
 BB = "\033[34;1m"
