@@ -35,6 +35,7 @@ def instagram():
 	print(" la aesta da ba be Proxya ")
 	ID=input("   Your ID Telegram :")
 	token=input("  Token(bot) : ")
+	print('+wd+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		global bad, timeout, hacked, checkpoint, error, hits
 		combo=input(" [ Path ] File >> ")
