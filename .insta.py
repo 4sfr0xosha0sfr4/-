@@ -27,7 +27,7 @@ def music():
     print(wd+"\n")
     os.system("clear ;figlet Api Termux")
     print("==================================================")
-    os.system("xdg-open https//play.google.com/storeapps/details?id=com.termux.api")
+    os.system("xdg-open https://play.google.com/store/apps/details?id=com.termux.api")
     time.sleep(5)
     os.system("clear")
     os.system("figlet Music")
@@ -73,7 +73,7 @@ def instagram():
 	from user_agent import generate_user_agent
 	from datetime import datetime
 	r = requests.session()
-	print(" la aesta da ba be Proxya ")
+	print("  la aesta da ba be Proxya ")
 	ID=input("   Your ID Telegram :")
 	token=input("  Token(bot) : ")
 	print(wd+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
