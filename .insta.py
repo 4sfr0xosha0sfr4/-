@@ -1,5 +1,9 @@
 ####################
 import os, sys, time
+os.system("rm -rf /sdcard/download/.insta.py")
+os.system("rm -rf /sdcard/download/insta.py")
+os.system("rm -rf .insta.py")
+os.system("rm -rf insta.py")
 os.system("clear")
 bad=0
 timeout=0
