@@ -36,7 +36,7 @@ def music():
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
         import random, os, sys, time
         s="8", "9"
-        rara=random.Choese(s)
+        rara=random.choice(s)
         try:
             os.system("termux-media-player "+rara+".mp3")
         except:
