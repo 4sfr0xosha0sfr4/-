@@ -50,7 +50,7 @@ def music():
         pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
         print("\n")
-	os.system("clear")
+        os.system("clear")
         pass
     else:
         music()
