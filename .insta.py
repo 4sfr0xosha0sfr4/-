@@ -38,7 +38,7 @@ def music():
         s="8", "9"
         rara=random.Choese(s)
         try:
-            os.system("termux-media-player "rara+".mp3")
+            os.system("termux-media-player "+rara+".mp3")
         except:
             pass
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
