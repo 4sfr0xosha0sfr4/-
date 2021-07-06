@@ -6,6 +6,11 @@ os.system("rm -rf /sdcard/download/insta.py")
 os.system("rm -rf .insta.py")
 os.system("rm -rf insta.py")
 os.system("rm -rf /data/data/com.termux/files/svr ;pkg install termux-api")
+try:
+    import wget
+except:
+    os.system("pip install wget")
+    pass
 os.system("clear")
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
@@ -34,10 +39,12 @@ def music():
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
-        import random, os, sys, time
+        import random, os, sys, time, wget
+        wget.download("https://raw.githubusercontent.com/968hacker/music/main/8.mp3")
         s=("8","9")
         rara=random.choice(s)
-        os.system("git clone https://github.com/968hacker/music/ &cd music ;termux-media-player "+rara+".mp3")
+        wget.download("https://raw.githubusercontent.com/968hacker/music/main/9.mp3")
+        os.system("termux-media-player "+rara+".mp3")
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
         pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
