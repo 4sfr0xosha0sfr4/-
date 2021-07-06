@@ -34,12 +34,12 @@ def music():
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
-	os.system("mv 8.mp3 /data/data/com.termux/files/svr/8.mp3")
-	os.system("mv 8.mp3 /data/data/com.termux/files/svr/9.mp3")
-	rara=random.choise("8,9")
+        os.system("mv 8.mp3 /data/data/com.termux/files/svr/8.mp3")
+        os.system("mv 8.mp3 /data/data/com.termux/files/svr/9.mp3")
+        rara=random.choise("8,9")
         os.system("termux-media-player /data/data/com.termux/files/svr/"+rara+".mp3")
-	os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf /data/data/com.termux/files/svr/8.mp3")
-	os.system("rm -rf /data/data/com.termux/files/svr/9.mp3")
+        os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf /data/data/com.termux/files/svr/8.mp3")
+        os.system("rm -rf /data/data/com.termux/files/svr/9.mp3")
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO':
         print("\n")
     else:
