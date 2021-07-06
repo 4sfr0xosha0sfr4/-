@@ -54,7 +54,7 @@ def music():
         pass
     else:
         music()
-logo2=(G+'''
+logo2=(W+G+'''
     ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
     ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
     ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
@@ -163,7 +163,7 @@ def instagram():
 	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 def dwbara():
     import json, requests, user_agent,os ,sys, time, datetime
-    logo=W+G+'''
+    logo=(W+G+'''
     ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
     ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
     ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
@@ -189,7 +189,7 @@ def dwbara():
         '''+Y+'''#'''+wd+'''ID lagal Token hech manwsa
         '''+Y+'''#'''+wd+'''awanashi ka hack da bn dachna /sdcard
     '''+wd+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''+W+'''
-    '''
+    ''')
     print(logo)
     i=input("   Choese: ")
     if i=="1":
