@@ -34,7 +34,7 @@ def music():
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
-	    import random
+        import random, os, sys, time
         os.system("mv 8.mp3 /data/data/com.termux/files/svr/8.mp3")
         os.system("mv 8.mp3 /data/data/com.termux/files/svr/9.mp3")
         rara=random.choise("8", "9")
