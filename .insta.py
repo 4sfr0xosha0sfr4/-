@@ -36,9 +36,9 @@ def music():
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
         os.system("termux-media-player 0.mp3")
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO':
-	print("\n")
+        print("\n")
     else:
-	music()
+        music()
 logo2='''
     ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
     ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
