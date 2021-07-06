@@ -22,7 +22,7 @@ W = "\033[0;1m"
 R = "\033[31m"   
 C = "\033[36;1m"
 def music():
-    import os, sys, time
+    import os, sys, time, random
     wd = "\033[90;1m" 
     print(wd+"\n")
     os.system("clear ;figlet Api Termux")
