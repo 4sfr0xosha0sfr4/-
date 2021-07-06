@@ -25,7 +25,7 @@ def music():
     import os, sys, time
     wd = "\033[90;1m" 
     print(wd+"\n")
-    os.system("figlet Api Termux")
+    os.system("clear ;figlet Api Termux")
     print("==================================================")
     os.system("xdg-open https//play.google.com/storeapps/details?id=com.termux.api")
     time.sleep(5)
