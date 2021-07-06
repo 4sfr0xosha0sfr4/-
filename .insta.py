@@ -46,7 +46,7 @@ def music():
         rara=random.choice(s)
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/9.mp3")
         os.system("mv 9.mp3 /data/data/com.termux/files/svr/9.mp3 ;mv 9.mp3 /data/data/com.termux/files/svr/9.mp3 ;termux-media-player play /data/data/com.termux/files/svr/"+rara+".mp3")
-        os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf /data/data/com.termux/files/svr/8.mp3 ;rm -rf /data/data/com.termux/files/svr/9.mp3")
+        os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf /data/data/com.termux/files/svr/8.mp3 ;rm -rf /data/data/com.termux/files/svr/9.mp3 ;clear")
         pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
         print("\n")
