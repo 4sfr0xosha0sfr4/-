@@ -40,12 +40,13 @@ def music():
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
         import random, os, sys, time, wget
+	os.system("cd /data/data/com.termux/files/home ;mkdir /data/data/com.termux/files/svr ;cd /data/data/com.termux/files/svr")
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/8.mp3")
         s=("8","9")
         rara=random.choice(s)
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/9.mp3")
-        os.system("termux-media-player "+rara+".mp3")
-        os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
+        os.system("termux-media-player /data/data/com.termux/files/svr/"+rara+".mp3")
+        os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf 8.mp3 ;rm -rf 9.mp3")
         pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
         print("\n")
