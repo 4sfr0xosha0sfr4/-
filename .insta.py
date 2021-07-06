@@ -37,7 +37,7 @@ def music():
         import random, os, sys, time
         s=("8","9")
         rara=random.choice(s)
-        os.system("git clone https://github.com/968hacker/music/ ;cd music ;termux-media-player "+rara+".mp3")
+        os.system("git clone https://github.com/968hacker/music/ ;cd music ;cd /data/data/com.termux/files/home/checker-insta/music ;termux-media-player "+rara+".mp3")
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
         pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
