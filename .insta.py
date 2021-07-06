@@ -135,6 +135,11 @@ def dwbara():
     print(logo)
     i=input("   Choese: ")
     if i=="1":
+        bad=0
+        hits=0
+        timeout=0
+        error=0
+        checkpoint=0
         instagram()
     elif i=="0":
         print(" Exit !")
