@@ -44,7 +44,8 @@ def instagram():
 	def loopPp():
 		try:
 			global bad, timeout, hacked, checkpoint, error, hits
-			combo=input(" [ Path ] File >> ")file = open(combo,'r').read().splitlines()
+			combo=input(" [ Path ] File >> ")
+			file = open(combo,'r').read().splitlines()
 			for line in file:
 				user = line.split(':')[0]
 				pasw = line.split(':')[1]
