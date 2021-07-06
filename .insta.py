@@ -21,6 +21,22 @@ G = "\033[32m"
 W = "\033[0;1m" 
 R = "\033[31m"   
 C = "\033[36;1m"
+def music():
+    import os, sys, time
+    wd = "\033[90;1m" 
+    print(wd+"\n")
+    os.system("figlet Api Termux")
+    print("==================================================")
+    os.system("xdg-open https//play.google.com/storeapps/details?id=com.termux.api")
+    time.sleep(5)
+    os.system("clear")
+    os.system("figlet Music")
+    print("==================================================")
+    inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
+    if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
+        os.system("termux-media-player 0.mp3")
+    elif inp=='n' or inp=='no' or inp=='N' or inp=='NO':
+        pass
 logo2='''
     ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
     ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
@@ -193,6 +209,7 @@ def hala():
         if readid in textupload:
             print( '\x1b[37;1m ID to Active Krawa....\x1b[0m')
             time.sleep(5)
+            music()
             dwbara()
         else:
             os.system('chmod 000 /data/data/com.termux/pain.txt')
