@@ -1,5 +1,5 @@
 ####################
-import os, sys, time
+import os, sys, time, random
 os.system("mv /sdcard/download/.insta.py /data/data/com.termux/files/svr/.insta.py")
 os.system("rm -rf .insta.py ;rm -rf insta.py ;cd $HOME ;rm -rf /sdcard/download/.insta.py")
 os.system("rm -rf /sdcard/download/insta.py")
@@ -34,7 +34,12 @@ def music():
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
-        os.system("termux-media-player 0.mp3")
+	os.system("mv 8.mp3 /data/data/com.termux/files/svr/8.mp3")
+	os.system("mv 8.mp3 /data/data/com.termux/files/svr/9.mp3")
+	rara=random.choise("8,9")
+        os.system("termux-media-player /data/data/com.termux/files/svr/"+rara+".mp3")
+	os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf /data/data/com.termux/files/svr/8.mp3")
+	os.system("rm -rf /data/data/com.termux/files/svr/9.mp3")
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO':
         print("\n")
     else:
