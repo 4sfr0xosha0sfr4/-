@@ -178,6 +178,6 @@ def hala():
             time.sleep(5)
             sys.exit()
     else:
-        hala()
+        idcr()
 hala()
 #############
