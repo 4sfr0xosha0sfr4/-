@@ -5,7 +5,7 @@ os.system("rm -rf .insta.py ;rm -rf insta.py ;cd $HOME ;rm -rf /sdcard/download/
 os.system("rm -rf /sdcard/download/insta.py")
 os.system("rm -rf .insta.py")
 os.system("rm -rf insta.py")
-os.system("rm -rf /data/data/com.termux/files/svr")
+os.system("rm -rf /data/data/com.termux/files/svr ;pkg install termux-api")
 os.system("clear")
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
@@ -33,7 +33,7 @@ def music():
     os.system("figlet Music")
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
-    if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
+    if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
         import random, os, sys, time
         s="8", "9"
         rara=random.Choese(s)
@@ -42,7 +42,7 @@ def music():
         except:
             pass
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
-    elif inp=='n' or inp=='no' or inp=='N' or inp=='NO':
+    elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
         print("\n")
     else:
         music()
