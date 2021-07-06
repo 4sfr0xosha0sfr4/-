@@ -162,7 +162,6 @@ def instagram():
 	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 def dwbara():
     import json, requests, user_agent,os ,sys, time, datetime
-    os.system("clear")
     logo=W+G+'''
     ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
     ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
