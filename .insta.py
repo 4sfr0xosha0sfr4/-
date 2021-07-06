@@ -34,7 +34,10 @@ def music():
     print("==================================================")
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
-        import random, os, sys, time
+        import random, os, sys, time, wget
+        wget.download("https://github.com/968hacker/music/blob/main/8.mp3")
+        print("\n")
+        wget.download("https://github.com/968hacker/music/blob/main/9.mp3")
         s="8", "9"
         rara=random.choice(s)
         try:
