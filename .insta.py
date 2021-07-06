@@ -25,7 +25,7 @@ def music():
     import os, sys, time, random
     wd = "\033[90;1m" 
     print(wd+"\n")
-    os.system("clear ;figlet Api Termux")
+    os.system("clear ;figlet Termux Api")
     print("==================================================")
     os.system("xdg-open https://play.google.com/store/apps/details?id=com.termux.api")
     time.sleep(5)
@@ -35,15 +35,14 @@ def music():
     inp=input(" Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
         import random, os, sys, time
-        s="8", "9"
+        s=("8","9")
         rara=random.choice(s)
-        try:
-            os.system("termux-media-player "+rara+".mp3")
-        except:
-            pass
+        os.system("termux-media-player "+rara+".mp3")
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
+        pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
         print("\n")
+        pass
     else:
         music()
 logo2=(G+'''
