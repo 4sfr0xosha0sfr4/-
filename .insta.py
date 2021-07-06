@@ -27,7 +27,7 @@ def music():
     print(wd+"\n")
     os.system("clear ;figlet Api Termux")
     print("==================================================")
-    os.system("xdg-open https//play.google.com/storeapps/details?id=com.termux.api")
+    os.system("open-xdg https//play.google.com/storeapps/details?id=com.termux.api")
     time.sleep(5)
     os.system("clear")
     os.system("figlet Music")
@@ -36,7 +36,7 @@ def music():
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES':
         os.system("mv 8.mp3 /data/data/com.termux/files/svr/8.mp3")
         os.system("mv 8.mp3 /data/data/com.termux/files/svr/9.mp3")
-        rara=random.choise("8,9")
+        rara=random.choise("8", "9")
         os.system("termux-media-player /data/data/com.termux/files/svr/"+rara+".mp3")
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3 ;rm -rf /data/data/com.termux/files/svr/8.mp3")
         os.system("rm -rf /data/data/com.termux/files/svr/9.mp3")
