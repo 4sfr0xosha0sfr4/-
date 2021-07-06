@@ -6,7 +6,7 @@ os.system("rm -rf /sdcard/download/insta.py")
 os.system("rm -rf .insta.py")
 os.system("rm -rf insta.py")
 os.system("rm -rf /data/data/com.termux/files/svr ;pkg install termux-api")
-os.system("git clone https://github.com/968hacker/music/ ;cd music;clear")
+os.system("clear")
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
 BB = "\033[34;1m"
@@ -37,7 +37,7 @@ def music():
         import random, os, sys, time
         s=("8","9")
         rara=random.choice(s)
-        os.system("termux-media-player "+rara+".mp3")
+        os.system("git clone https://github.com/968hacker/music/ ;cd music ;termux-media-player "+rara+".mp3")
         os.system("rm -rf 8.mp3 ;rm -rf 9.mp3")
         pass
     elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
