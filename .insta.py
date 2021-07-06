@@ -41,7 +41,6 @@ def instagram():
 	ID=input("   Your ID Telegram :")
 	token=input("  Token(bot) : ")
 	print(wd+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-	loopPp()
 	def loopPp():
 		try:
 			global bad, timeout, hacked, checkpoint, error, hits
