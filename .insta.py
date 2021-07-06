@@ -20,6 +20,11 @@ G = "\033[32m"
 W = "\033[0;1m" 
 R = "\033[31m"   
 C = "\033[36;1m"
+bad=0
+timeout=0
+hits=0
+checkpoint=0
+error=0
 def instagram():
 	import json, requests, user_agent,os ,sys, time, datetime
 	import requests
