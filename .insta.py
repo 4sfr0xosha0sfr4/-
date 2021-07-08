@@ -119,13 +119,6 @@ def instagram1():
 	from user_agent import generate_user_agent
 	from datetime import datetime
 	r = requests.session()
-    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-        ID=input("    Your ID Telegram :")
-        token=input("    Token(bot) : ")
-    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-        pass
-    else:
-        pass
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
@@ -521,6 +514,38 @@ def instagram4():
 ################################################################################################################################################################################################
 ################################################################################################
 ################################################################################################
+def i1():
+    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+    ID=input("    Your ID Telegram :")
+    token=input("    Token(bot) : ")
+    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
+        instgram1()
+    else:
+        instgram1()
+def i2():
+    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+    ID=input("    Your ID Telegram :")
+    token=input("    Token(bot) : ")
+    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
+        instgram2()
+    else:
+        instgram2()
+def i3():
+    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+    ID=input("    Your ID Telegram :")
+    token=input("    Token(bot) : ")
+    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
+        instgram3()
+    else:
+        instgram3()
+def i4():
+    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+    ID=input("    Your ID Telegram :")
+    token=input("    Token(bot) : ")
+    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
+        instgram4()
+    else:
+        instgram4()
 def dwbara():
     import json, requests, user_agent,os ,sys, time, datetime
     logo=(W+G+'''
@@ -552,13 +577,13 @@ def dwbara():
     print(logo)
     i=input("    Choese: ")
     if i=="1":
-        instagram1()
+        i1()
     elif i=="2":
-        instagram2()
+        i2()
     elif i=="3":
-        instagram3()
+        i3()
     elif i=="4":
-        instagram4()
+        i4()
     elif i=="0":
         print(" Exit !")
         os.sys.exit()
