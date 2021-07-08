@@ -67,11 +67,11 @@ G = "\033[32m"
 W = "\033[0;1m" 
 R = "\033[31m"   
 C = "\033[36;1m"
+agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
 def music():
     import os, sys, time, random
     wd = "\033[90;1m" 
     os.system("clear; figlet BOT ;echo'==================================='")
-    agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
     print(wd+"\n")
     os.system("clear ;figlet Termux Api")
     print("==================================================")
