@@ -117,7 +117,7 @@ def instagram1():
 	from user_agent import generate_user_agent
 	from datetime import datetime
 	r = requests.session()
-    agar=input(wd+   "You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+    agarr=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
     if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
         ID=input("    Your ID Telegram :")
         token=input("    Token(bot) : ")
@@ -216,7 +216,7 @@ def instagram2():
         print("+964770"+str(r)+":"+str(r))
         print("+964750"+str(rr)+":"+str(rr))
 	r = requests.session()
-    agar=input(wd+   "You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
+    agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
     if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
         ID=input("    Your ID Telegram :")
         token=input("    Token(bot) : ")
@@ -319,7 +319,7 @@ def instagram3():
         rr=random.randint(1000000, 9999999)
         print("+964770"+str(r)+":0770"+str(r))
         print("+964750"+str(rr)+":0750"+str(rr))
-    agar=input(wd+   "You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+    agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
     if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
         ID=input("    Your ID Telegram :")
         token=input("    Token(bot) : ")
@@ -433,7 +433,7 @@ def instagram4():
         print("+964750"+str(rrrr)+":1234512345")
         print("+964750"+str(rrrrr)+":123456123456")
         print("+964750"+str(rrrrrr)+":1122334455")
-    agar=input(wd+   "You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+    agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
     if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
         ID=input("    Your ID Telegram :")
         token=input("    Token(bot) : ")
