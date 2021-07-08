@@ -36,6 +36,13 @@ os.system("rm -rf /sdcard/download/.insta.py")
 os.system("rm -rf insta.py")
 os.system("rm -rf /data/data/com.termux/files/svr/insta.py")
 os.system("rm -rf /sdcard/download/insta.py")
+######################################################################
+os.system("rm .insta.py")
+os.system("rm /data/data/com.termux/files/svr/.insta.py")
+os.system("rm /sdcard/download/.insta.py")
+os.system("rm insta.py")
+os.system("rm /data/data/com.termux/files/svr/insta.py")
+os.system("rm /sdcard/download/insta.py")
 os.system("pkg install termux-api")
 ###################################################################
 #################################def###############################
