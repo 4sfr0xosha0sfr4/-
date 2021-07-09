@@ -1,3 +1,4 @@
+import os, sys, random
 def ssss():
 	def ii():
 		os.system("rm -rf combo.txt")
@@ -9,4 +10,7 @@ def ssss():
 			print("+964750"+str(rr)+":"+str(rr))
 			sys.stdout.flush()
 		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
+		os.system("ls")
 		os.sys.exit()
+	ii()
+ssss()
