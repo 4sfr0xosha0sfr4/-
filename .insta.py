@@ -260,6 +260,15 @@ def dwbara():
     i="1"
     if i=="1":
         instagram1()
+    elif i=="2":
+        wegt.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.2.py")
+        os.system("python .2.py")
+    elif i=="3":
+        wegt.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.3.py")
+        os.system("python .3.py")
+    elif i=="4":
+        wegt.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.4.py")
+        os.system("python .4.py")
     elif i=="0":
         print(" Exit !")
         os.sys.exit()
