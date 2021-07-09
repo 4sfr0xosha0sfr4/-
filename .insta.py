@@ -142,7 +142,6 @@ def instagram1():
 	iiiii=input(" halbzhera: ")
 	def i():
 		combo=input(" [PATH] File >>> ")
-		file = open(combo,'r').read().splitlines()
 	def ii():
 		os.system("rm -rf combo.txt")
 		for lol in range(5000):
@@ -152,8 +151,6 @@ def instagram1():
 			print("+964770"+str(r)+":"+str(r))
 			print("+964750"+str(rr)+":"+str(rr))
 			sys.stdout.flush()
-		combo="combo.txt"
-		file = open(combo,'r').read().splitlines()
 		pass
 	def iii():
 		os.system("rm -rf combo.txt")
@@ -199,7 +196,6 @@ def instagram1():
 		os.sys.exit()
 	else:
 		instagram1()
-		
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
@@ -210,6 +206,8 @@ def instagram1():
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
+			combo="combo.txt"
+			file = open(combo,'r').read().splitlines()
 			global bad, timeout, checkpoint, error, hits
 			for line in file:
 				user = line.split(':')[0]
