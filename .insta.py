@@ -145,9 +145,9 @@ def instagram1():
 	def ii():
 		os.system("rm -rf combo.txt")
 		for lol in range(5000):
-			sys.stdout=open("combo.txt", "a")
 			r=random.randint(1000000, 9999999)
 			rr=random.randint(1000000, 9999999)
+			sys.stdout=open("combo.txt", "a")
 			print("+964770"+str(r)+":"+str(r))
 			print("+964750"+str(rr)+":"+str(rr))
 			sys.stdout.flush()
@@ -155,9 +155,9 @@ def instagram1():
 	def iii():
 		os.system("rm -rf combo.txt")
 		for loll in range(5000):
-			sys.stdout=open("combo.txt", "a")
 			r=random.randint(1000000, 9999999)
 			rr=random.randint(1000000, 9999999)
+			sys.stdout=open("combo.txt", "a")
 			print("+964770"+str(r)+":0770"+str(r))
 			print("+964750"+str(rr)+":0750"+str(rr))
 			sys.stdout.flush()
@@ -165,13 +165,13 @@ def instagram1():
 	def iiii():
 		os.system("rm -rf combo.txt")
 		for loll in range(1000):
-			sys.stdout=open("combo.txt", "a")
 			r=random.randint(1000000, 9999999)
 			rr=random.randint(1000000, 9999999)
 			rrr=random.randint(1000000, 9999999)
 			rrrr=random.randint(1000000, 9999999)
 			rrrrr=random.randint(1000000, 9999999)
 			rrrrrr=random.randint(1000000, 9999999)
+			sys.stdout=open("combo.txt", "a")
 			print("+964770"+str(r)+":"+str(r))
 			print("+964750"+str(rr)+":"+str(rr))
 			print("+964770"+str(rrr)+":0770"+str(rrr))
