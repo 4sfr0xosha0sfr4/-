@@ -1,5 +1,5 @@
 import os,sys,random
-def i2():
+def ii():
 	os.system("rm -rf combo.txt")
 	for lol in range(5000):
 		sys.stdout=open("combo.txt", "a")
@@ -8,7 +8,7 @@ def i2():
 		print("+964770"+str(r)+":"+str(r))
 		print("+964750"+str(rr)+":"+str(rr))
 		sys.stdout.flush()
-def i3():
+def iii():
 	os.system("rm -rf combo.txt")
 	for loll in range(5000):
 		import sys
@@ -18,7 +18,7 @@ def i3():
 		print("+964770"+str(r)+":0770"+str(r))
 		print("+964750"+str(rr)+":0750"+str(rr))
 		sys.stdout.flush()
-def i4():
+def iiii():
 	os.system("rm -rf combo.txt")
 	for loll in range(1000):
 		sys.stdout=open("combo.txt", "a")
@@ -580,14 +580,14 @@ def dwbara():
     if i=="1":
         instagram1()
     elif i=="2":
-		i2()
-        instagram2()
-	elif i=="3":
-		i3()
-        instagram3()
+    	ii()
+    	instagram2()
+    elif i=="3":
+    	iii()
+    	instagram3()
     elif i=="4":
-		i4()
-        instagram4()
+    	iiii()
+    	instagram4()
     elif i=="0":
         print(" Exit !")
         os.sys.exit()
