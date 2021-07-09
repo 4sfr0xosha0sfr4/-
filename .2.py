@@ -1,4 +1,4 @@
-import os, sys, random
+import os, sys, random, wget
 def ssss():
 	def ii():
 		os.system("rm -rf combo.txt")
@@ -14,3 +14,4 @@ def ssss():
 		os.sys.exit()
 	ii()
 ssss()
+wget.download("")
