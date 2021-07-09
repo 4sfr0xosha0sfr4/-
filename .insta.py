@@ -273,11 +273,11 @@ def dwbara():
         os.system("python .2.py")
     elif ia=="3":
         import wget, os
-        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/3.py")
+        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/3/main/.3.py")
         os.system("python .3.py")
     elif ia=="4":
         import wget, os
-        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.4.py")
+        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/4/main/.4.py")
         os.system("python .4.py")
     elif ia=="0":
         print(" Exit !")
