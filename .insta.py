@@ -8,6 +8,7 @@ def ii():
 		print("+964770"+str(r)+":"+str(r))
 		print("+964750"+str(rr)+":"+str(rr))
 		sys.stdout.flush()
+	pass
 def iii():
 	os.system("rm -rf combo.txt")
 	for loll in range(5000):
@@ -18,6 +19,7 @@ def iii():
 		print("+964770"+str(r)+":0770"+str(r))
 		print("+964750"+str(rr)+":0750"+str(rr))
 		sys.stdout.flush()
+	pass
 def iiii():
 	os.system("rm -rf combo.txt")
 	for loll in range(1000):
@@ -35,6 +37,7 @@ def iiii():
 		print("+964750"+str(rrrrr)+":123456123456")
 		print("+964750"+str(rrrrrr)+":1122334455")
 		sys.stdout.flush()
+	pass
 ###################################################################
 try:
 	import requests
