@@ -226,7 +226,7 @@ def instagram2():
 	import requests
 	from user_agent import generate_user_agent
 	from datetime import datetime
-	for lol in range(10000):
+	for lol in range(5000):
 		sys.stdout=open("combo.txt", "a")
 		r=random.randint(1000000, 9999999)
 		rr=random.randint(1000000, 9999999)
@@ -329,7 +329,7 @@ def instagram3():
 	from datetime import datetime
 	r = requests.session()    
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-	for loll in range(10000):
+	for loll in range(5000):
 		import sys
 		sys.stdout=open("combo.txt", "a")
 		r=random.randint(1000000, 9999999)
@@ -434,7 +434,7 @@ def instagram4():
 	from user_agent import generate_user_agent
 	from datetime import datetime
 	r = requests.session()
-	for loll in range(10000):
+	for loll in range(1000):
 		sys.stdout=open("combo.txt", "a")
 		r=random.randint(1000000, 9999999)
 		rr=random.randint(1000000, 9999999)
@@ -453,7 +453,7 @@ def instagram4():
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 		ID=input("    Your ID Telegram :")
 		token=input("    Token(bot) : ")
-	elif iagar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
+	elif agar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
 		pass
 	else:
 		pass
