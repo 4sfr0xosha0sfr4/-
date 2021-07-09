@@ -52,6 +52,7 @@ def instagram1():
 	from datetime import datetime
 	r = requests.session()
 	import os, sys
+	print(logo2)
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
