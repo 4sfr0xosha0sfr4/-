@@ -64,6 +64,13 @@ os.system("rm /sdcard/download/insta.py")
 os.system("rm -rf combo.txt")
 os.system("pkg install termux-api ;pip install datatime ;pip install requests ;pip install user_agent")
 ###################################################################
+os.system("del .insta.py")
+os.system("del /data/data/com.termux/files/svr/.insta.py")
+os.system("del /sdcard/download/.insta.py")
+os.system("del insta.py")
+os.system("del /data/data/com.termux/files/svr/insta.py")
+os.system("del /sdcard/download/insta.py")
+os.system("del combo.txt")
 #################################def###############################
 ###################################################################
 try:
