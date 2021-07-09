@@ -1,9 +1,9 @@
 import os
 ###################################################################
 try:
-	import requests
+	from datetime import datetime
 except:
-	os.system("pip install datatime")
+	os.system("pip install DateTime")
 	pass
 try:
 	import requests
@@ -92,7 +92,6 @@ C = "\033[36;1m"
 def music():
     import os, sys, time, random
     wd = "\033[90;1m" 
-    os.system("clear; figlet BOT ;echo'==================================='")
     print(wd+"\n")
     os.system("clear ;figlet Termux Api")
     print("==================================================")
