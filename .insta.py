@@ -563,11 +563,11 @@ def dwbara():
     print(logo)
     i=input("    Choese: ")
     if i=="1":
-        instgram1()
+        instagram1()
     elif i=="2":
-        instgram2()
+        instagram2()
     elif i=="3":
-        instgram3()
+        instagram3()
     elif i=="4":
         instagram4()
     elif i=="0":
