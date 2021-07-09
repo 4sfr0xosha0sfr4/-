@@ -144,7 +144,7 @@ def instagram1():
 		combo=input(" [PATH] File >>> ")
 	def ii():
 		os.system("rm -rf combo.txt")
-		for lol in range(5000):
+		for lowdl in range(5000):
 			r=random.randint(1000000, 9999999)
 			rr=random.randint(1000000, 9999999)
 			sys.stdout=open("combo.txt", "a")
@@ -154,7 +154,7 @@ def instagram1():
 		pass
 	def iii():
 		os.system("rm -rf combo.txt")
-		for loll in range(5000):
+		for loldl in range(5000):
 			r=random.randint(1000000, 9999999)
 			rr=random.randint(1000000, 9999999)
 			sys.stdout=open("combo.txt", "a")
@@ -164,7 +164,7 @@ def instagram1():
 		pass
 	def iiii():
 		os.system("rm -rf combo.txt")
-		for loll in range(1000):
+		for lossll in range(1000):
 			r=random.randint(1000000, 9999999)
 			rr=random.randint(1000000, 9999999)
 			rrr=random.randint(1000000, 9999999)
@@ -196,6 +196,7 @@ def instagram1():
 		os.sys.exit()
 	else:
 		instagram1()
+	sys.stdout.flush()
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
