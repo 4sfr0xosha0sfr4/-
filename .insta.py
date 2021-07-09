@@ -3,6 +3,11 @@ import os
 try:
 	import requests
 except:
+	os.system("pip install datatime")
+	pass
+try:
+	import requests
+except:
 	os.system("pip install requests")
 	pass
 try:
