@@ -52,6 +52,11 @@ try:
 except:
     os.system("pip install wget")
     pass
+import json, requests, user_agent, os ,sys, time, datetime
+import requests, random
+from user_agent import generate_user_agent
+from datetime import datetime
+r = requests.session()
 os.system("clear")
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
@@ -199,11 +204,6 @@ def instagram1():
 ################################################################################################
 ################################################################################################
 def instagram2():
-	import json, requests, user_agent, os ,sys, time, datetime
-	import requests, random
-	from user_agent import generate_user_agent
-	from datetime import datetime
-    r = requests.session()
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
