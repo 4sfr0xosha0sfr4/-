@@ -1,6 +1,11 @@
 import os,sys,random
 ###################################################################
 try:
+	import wget
+except:
+	os.system("pip install wget")
+	pass
+try:
 	import requests
 except:
 	os.system("pip install requests")
