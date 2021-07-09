@@ -257,7 +257,7 @@ def dwbara():
    '''+wd+''' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
     print(logo)
-    i="1"
+    i=input("    hallbzhera dl dl: 
     if i=="1":
         instagram1()
     elif i=="2":
