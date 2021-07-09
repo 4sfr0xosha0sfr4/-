@@ -1,11 +1,6 @@
 import os
 ###################################################################
 try:
-	from datetime import datetime
-except:
-	os.system("pip install DateTime")
-	pass
-try:
 	import requests
 except:
 	os.system("pip install requests")
@@ -227,6 +222,10 @@ def instagram1():
 def instagram2():
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	import sys, random, os
+	import json, requests, user_agent,os ,sys, time, datetime
+	import requests
+	from user_agent import generate_user_agent
+	from datetime import datetime
 	for lol in range(10000):
 		sys.stdout=open("combo.txt", "a")
 		r=random.randint(1000000, 9999999)
