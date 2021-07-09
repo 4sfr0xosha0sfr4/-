@@ -56,7 +56,6 @@ def ins():
 			sys.stdout.flush()
 		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
 		os.sys.exit()
-	iiiii=input(" halbzhera: ")
 	if iiiii=="1":
 		instagram1()
 	elif iiiii=="2":
