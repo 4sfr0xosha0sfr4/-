@@ -11,4 +11,5 @@ def g():
 			sys.stdout.flush()
 		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
 		os.sys.exit()
-g()
+	iii()
+g()	
