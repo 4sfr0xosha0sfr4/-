@@ -265,21 +265,21 @@ def dwbara():
     ''')
     print(logo)
     i=input("    hallbzhera dl dl: ")
-    if i=="1":
+    if ia=="1":
         instagram1()
-    elif i=="2":
+    elif ia=="2":
         import wget, os
         wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.2.py")
         os.system("python .2.py")
-    elif i=="3":
+    elif ia=="3":
         import wget, os
         wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/3.py")
         os.system("python .3.py")
-    elif i=="4":
+    elif ia=="4":
         import wget, os
         wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.4.py")
         os.system("python .4.py")
-    elif i=="0":
+    elif ia=="0":
         print(" Exit !")
         os.sys.exit()
     else:
