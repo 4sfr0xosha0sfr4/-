@@ -196,6 +196,7 @@ def instagram1():
 		os.sys.exit()
 	else:
 		instagram1()
+	import os, sys
 	sys.stdout.flush()
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
