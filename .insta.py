@@ -268,12 +268,15 @@ def dwbara():
     if i=="1":
         instagram1()
     elif i=="2":
+        import wget, os
         wegt.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.2.py")
         os.system("python .2.py")
     elif i=="3":
+        import wget, os
         wegt.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.3.py")
         os.system("python .3.py")
     elif i=="4":
+        import wget, os
         wegt.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.4.py")
         os.system("python .4.py")
     elif i=="0":
