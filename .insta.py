@@ -143,7 +143,7 @@ def music():
     inp=input("         Hallbzhera dldl:  ")
     if inp=='1':
         import random, os, sys, time
-        wget.download("https://raw.githubusercontent.com/968hacker/music/main/navidkomsay.mp3")
+        wget.download("https://raw.githubusercontent.com/968hacker/music/main/komsay.mp3")
         os.system("termux-media-player play komsay.mp3 ;clear")
         pass
     if inp=='2':
