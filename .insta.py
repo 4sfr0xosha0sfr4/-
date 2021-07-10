@@ -141,6 +141,21 @@ def music():
     os.system("clear")
     print(lgo)
     inp=input("         Hallbzhera dldl:  ")
+    if inp=='1':
+        import random, os, sys, time
+        wget.download("https://raw.githubusercontent.com/968hacker/music/main/navidkomsay.mp3")
+        os.system("termux-media-player play komsay.mp3 ;clear")
+        pass
+    if inp=='2':
+        import random, os, sys, time
+        wget.download("https://raw.githubusercontent.com/968hacker/music/main/navid.mp3")
+        os.system("termux-media-player play navid.mp3 ;clear")
+        pass
+    if inp=='3':
+        import random, os, sys, time
+        wget.download("https://raw.githubusercontent.com/968hacker/music/main/Hardi.mp3")
+        os.system("termux-media-player play Hardi.mp3 ;clear")
+        pass
     if inp=='4':
         import random, os, sys, time
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/9.mp3")
