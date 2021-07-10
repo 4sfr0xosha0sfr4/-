@@ -98,6 +98,20 @@ G = "\033[32m"
 W = "\033[0;1m" 
 R = "\033[31m"   
 C = "\033[36;1m"
+lgo='''
+	
+	 ███▄ ▄███▓ █    ██   ██████  ██▓ ▄████▄  
+	▓██▒▀█▀ ██▒ ██  ▓██▒▒██    ▒ ▓██▒▒██▀ ▀█  
+        ▓███   ▓██░▓██  ▒██░░ ▓██▄   ▒██▒▒▓█    ▄ 
+	▒██    ▒██ ▓▓█  ░██░  ▒   ██▒░██░▒▓▓▄ ▄██▒
+	▒██▒   ░██▒▒▒█████▓ ▒██████▒▒░██░▒ ▓███▀ ░
+	░ ▒░   ░  ░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░░▓  ░ ░▒ ▒  ░
+	░  ░      ░░░▒░ ░ ░ ░ ░▒  ░ ░ ▒ ░  ░  ▒   
+	░      ░    ░░░ ░ ░ ░  ░  ░   ▒ ░░        
+	       ░      ░           ░   ░  ░ ░      
+	                                 ░        
+	
+	'''
 def music():
     import os, sys, time, random
     wd = "\033[90;1m" 
@@ -107,8 +121,8 @@ def music():
     os.system("xdg-open https://play.google.com/store/apps/details?id=com.termux.api")
     time.sleep(5)
     os.system("clear")
-    os.system("figlet Music")
-    print("=======================================")
+    print(lgo)
+    print("\033[90;1m    =======================================")
     inp=input("    Do You Wnt Active Music ? (y,yes -or- n,no) ")
     if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
         import random, os, sys, time
@@ -150,16 +164,16 @@ def instagram1():
 	r = requests.session()
 	import os, sys
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
+	agar=input(wd+"    You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 		ID=input("    Your ID Telegram :")
-		token=input("    Token(bot) : ")
+		token=input("   Token(bot) : ")
 	else:
 		pass
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo=input("     [PATH] File >>> ")
+			combo=input("    [PATH] File >>> ")
 			file = open(combo,'r').read().splitlines()
 			global bad, timeout, checkpoint, error, hits
 			for line in file:
