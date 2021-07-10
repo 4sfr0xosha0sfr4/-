@@ -146,17 +146,17 @@ def music():
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/komsay.mp3")
         os.system("termux-media-player play komsay.mp3 ;clear")
         pass
-    if inp=='2':
+    elif inp=='2':
         import random, os, sys, time
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/navid.mp3")
         os.system("termux-media-player play navid.mp3 ;clear")
         pass
-    if inp=='3':
+    elif inp=='3':
         import random, os, sys, time
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/Hardi.mp3")
         os.system("termux-media-player play Hardi.mp3 ;clear")
         pass
-    if inp=='4':
+    elif inp=='4':
         import random, os, sys, time
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/9.mp3")
         os.system("termux-media-player play 9.mp3 ;clear")
