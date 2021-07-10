@@ -14,7 +14,7 @@ loglog='''
                                                                             
                                                                             \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 '''
-#############################
+##############################
 try:
 	import wget
 except:
@@ -125,9 +125,9 @@ lgo='''
 	                                 ░        
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
        dabet [Termux Api Dabgrit bo Krdnaway Music] \n      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        1- Sana Barznji (Error)
-        2- Navid Zardi (Error)
-        3- Hardi Salami (Error)
+        1- Sana Barznji 
+        2- Navid Zardi 
+        3- Hardi Salami 
         4- English
         0- Gorani m Nawet !	\n       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	'''
