@@ -127,21 +127,20 @@ lgo='''
 	'''
 def music():
     import os, sys, time, random
+    os.system("clear")
     wd = "\033[90;1m" 
     print(wd+"\n"+loglog)
-    os.system("clear")
     os.system("xdg-open https://play.google.com/store/apps/details?id=com.termux.api")
     time.sleep(4)
     os.system("clear")
     print(lgo)
-    print("\033[90;1m    =======================================")
-    inp=input("    Do You Wnt Active Music ? (y,yes -or- n,no) ")
-    if inp=='y' or inp=='yes' or inp=='Y' or inp=='YES' or inp=='Yes':
+    inp=input("         Hallbzhera dldl:  ")
+    if inp=='4':
         import random, os, sys, time
         wget.download("https://raw.githubusercontent.com/968hacker/music/main/9.mp3")
         os.system("termux-media-player play 9.mp3 ;clear")
         pass
-    elif inp=='n' or inp=='no' or inp=='N' or inp=='NO' or inp=='No':
+    elif inp=='0':
         print("\n")
         os.system("clear")
         pass
