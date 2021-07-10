@@ -123,7 +123,13 @@ lgo='''
 	░      ░    ░░░ ░ ░ ░  ░  ░   ▒ ░░        
 	       ░      ░           ░   ░  ░ ░      
 	                                 ░        
-	
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       dabet [Termux Api Dabgrit bo Krdnaway Music] \n      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        1- Sana Barznji (Error)
+        2- Navid Zardi (Error)
+        3- Hardi Salami (Error)
+        4- English
+        0- Gorani m Nawet !	\n       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	'''
 def music():
     import os, sys, time, random
