@@ -4,7 +4,7 @@ from user_agent import generate_user_agent
 from datetime import datetime
 os.system("rm .dabll.py")
 os.system("del .dabll.py")
-os.system("rm -rf .dabll.py")
+os.system("rm -rf .dabll.py ;rm -rf .git")
 try:
     os.remove(".dabll.py")
 except:
