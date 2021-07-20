@@ -307,6 +307,7 @@ def dwbara():
     print(logo)
     ia=input("    hallbzhera dl dl: ")
     if ia=="1":
+        os.system("xdg-open https://t.me/zed_cracker_1")
         instagram1()
     elif ia=="2":
         import wget, os
