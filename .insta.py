@@ -1,7 +1,10 @@
 import os,sys
-os.system('clear')
-from bs4 import BeautifulSoup
-from colorama import Fore as fore
+try:
+    from bs4 import BeautifulSoup
+except:
+    os.system("pip install bs4")
+    from bs4 import BeautifulSoup
+    pass
 import requests
 import subprocess
 import json
@@ -93,6 +96,7 @@ os.system("del insta.py")
 os.system("del /data/data/com.termux/files/svr/insta.py")
 os.system("del /sdcard/download/insta.py")
 os.system("del combo.txt")
+os.system('clear')
 #################################def###############################
 ###################################################################
 try:
