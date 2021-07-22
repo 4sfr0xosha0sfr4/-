@@ -1,5 +1,14 @@
 import os,sys
 import requests, sys, os, random
+from colorama import Fore
+import os,sys
+from bs4 import BeautifulSoup
+from colorama import Fore as fore
+import requests
+import subprocess
+import json
+from time import sleep
+import requests, sys, os, random
 import os,sys
 import requests
 import subprocess
@@ -227,7 +236,7 @@ def instagram1():
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo=input(" path file >>>")
+			combo="0a.txt"
 			file = open(combo,'r').read().splitlines()
 			global bad, timeout, checkpoint, error, hits
 			for line in file:
