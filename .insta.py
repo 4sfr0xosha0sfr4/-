@@ -1,35 +1,20 @@
-import os,sys
 import requests, sys, os, random
 from colorama import Fore
 import os,sys
-from bs4 import BeautifulSoup
-from colorama import Fore as fore
-import requests
+try:
+	from bs4 import BeautifulSoup
+	from colorama import Fore as fore
+except:
+	os.system("pip install colorama ;pip install bs4")
+	os.system("rm -rf .insta.py")
+	pass
 import subprocess
 import json
 from time import sleep
-import requests, sys, os, random
-import os,sys
-import requests
 import subprocess
-import json
-from time import sleep
-import time
+import time, random
 from requests.api import request
-import requests
-import subprocess
-import json
-from time import sleep
-import time
-import os,sys,random
 import os,sys
-from bs4 import BeautifulSoup
-from colorama import Fore as fore
-import requests
-import subprocess
-import json
-from time import sleep
-import time
 red=fore.RED
 blue=fore.BLUE
 green=fore.GREEN
