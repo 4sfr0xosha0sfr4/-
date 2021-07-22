@@ -1,20 +1,12 @@
 import os,sys
 import requests, sys, os, random
 import os,sys
-from bs4 import BeautifulSoup
 import requests
 import subprocess
 import json
 from time import sleep
 import time
-
 from requests.api import request
-try:
-    from bs4 import BeautifulSoup
-except:
-    os.system("pip install bs4")
-    from bs4 import BeautifulSoup
-    pass
 import requests
 import subprocess
 import json
