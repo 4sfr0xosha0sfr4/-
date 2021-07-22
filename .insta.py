@@ -1,13 +1,5 @@
 import requests, sys, os, random
-from colorama import Fore
 import os,sys
-try:
-	from bs4 import BeautifulSoup
-	from colorama import Fore as fore
-except:
-	os.system("pip install colorama ;pip install bs4")
-	os.system("rm -rf .insta.py")
-	pass
 import subprocess
 import json
 from time import sleep
@@ -15,13 +7,6 @@ import subprocess
 import time, random
 from requests.api import request
 import os,sys
-red=fore.RED
-blue=fore.BLUE
-green=fore.GREEN
-yellow=fore.YELLOW
-cyan=fore.CYAN
-magenta=fore.MAGENTA
-white=fore.WHITE
 ######################################
 loglog='''
 ▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ █    ██ ▒██   ██▒    ▄▄▄       ██▓███   ██▓
