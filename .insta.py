@@ -246,8 +246,8 @@ def instagram1():
                         'enc_password': "#PWD_INSTAGRAM_BROWSER:0:"+str(time_now)+":"+str(pasw),
                         'queryParams': {},
                         'optIntoOneTap': 'false',}
-                url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
-                headers_get_info = {
+			url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
+			headers_get_info = {
                     'accept': '*/*',
                     'accept-encoding': 'gzip, deflate, br',
                     'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
@@ -261,11 +261,11 @@ def instagram1():
                     'x-ig-www-claim': 'hmac.AR3P8eA45g5ELL3lqdIm-DHKY2MSY_kGWkN0tGEwG2Ks9Ncl',
                     'x-requested-with': 'XMLHttpRequest'
                 }
-                data_get_info = {
+			data_get_info = {
                     '__a': '1'
                 }
-                login = requests.post(url,headers=head,data=data, verify=True).text
-                try:
+			login = requests.post(url,headers=head,data=data, verify=True).text
+			try:
 					if '"authenticated":false' in login:
 						os.system("clear")
 						print(logo2)
@@ -287,9 +287,9 @@ def instagram1():
 						req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
 						email = str(req_get_info.json()['form_data']['username'])
 						url = f"https://www.instagram.com/{email}?hl=en"
-						r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
+						rr = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
 						s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
-						soup = BeautifulSoup(r,'html.parser')
+						soup = BeautifulSoup(rr,'html.parser')
 						meta = soup.find("meta")
 						name = soup.find("meta", property="og:title")
 						name = name["content"].split("(")[0]
