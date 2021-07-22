@@ -213,7 +213,7 @@ def instagram1():
 	else:
 		pass
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-	def loopPp(username,name,following,followers,posts,link_url,profile_pic):
+	def loopPp():
 		try:
 			combo=input("    [PATH] File >>> ")
 			file = open(combo,'r').read().splitlines()
@@ -251,7 +251,6 @@ def instagram1():
                     'accept': '*/*',
                     'accept-encoding': 'gzip, deflate, br',
                     'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
-                    'cookie': f'ig_did=3E70DB93-4A27-43EB-8463-E0BFC9B02AE1; mid=YCAadAALAAH35g_7e7h0SwBbFzBt; ig_nrcb=1; csrftoken=Zc4tm5D7QNL1hiMGJ1caLT7DNPTYHqH0; ds_user_id=45334757205; sessionid={sessd}; rur=VLL',
                     'referer': 'https://www.instagram.com/accounts/edit/',
                     'sec-fetch-dest': 'empty',
                     'sec-fetch-mode': 'cors',
@@ -291,11 +290,6 @@ def instagram1():
 					print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 					try:
 						def script():
-							try:
-								username = username
-							except:
-								print("Something Error!! Retry")
-								script()
 							url = f"https://www.instagram.com/{username}?hl=en"
 							r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
 							s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
