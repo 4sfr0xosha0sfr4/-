@@ -226,7 +226,7 @@ def instagram1():
 		pass
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
-		try:
+        try:
             combo=input(" Path File >>> ")
             file = open(combo,'r').read().splitlines()
             global bad, timeout, checkpoint, error, hits
