@@ -360,7 +360,7 @@ def idcr():
 def hala():
     x = os.listdir('/data/data/com.termux/')
     if 'pain.txt' in x:
-        os.system('chmod 777 /data/data/com.termux/pain.txt ;figlet Id Tool ;echo '=============================='')
+        os.system('chmod 777 /data/data/com.termux/pain.txt ;figlet Id Tool ;echo ==============================')
         readid = open('/data/data/com.termux/pain.txt', 'r').read()
         print('Your ID : ' + str(readid))
         textupload = requests.get('https://raw.githubusercontent.com/968hacker/list/main/list.txt').text
