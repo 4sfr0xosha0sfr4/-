@@ -301,10 +301,10 @@ def dwbara():
 '''+wd+'''
     |'''+W+''' 1 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Number or email:pass'''+wd+''')
     |'''+W+''' 2 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Number'''+wd+'''-'''+G+'''Random'''+wd+''')
-	|'''+W+''' 3 '''+wd+'''| '''+W+'''= '''+wd+'''Unfollow('''+R+'''instgram'''+wd+''')
-	|'''+W+''' 4 '''+wd+'''| '''+W+'''= '''+wd+'''delet-chat('''+R+'''instgram'''+wd+''')
-	|'''+W+''' 5 '''+wd+'''| '''+W+'''= '''+wd+'''delet-post('''+R+'''instgram'''+wd+''')
-	|'''+W+''' 6 '''+wd+'''| '''+W+'''= '''+wd+'''delet-post-saved('''+R+'''instgram'''+wd+''')
+    |'''+W+''' 3 '''+wd+'''| '''+W+'''= '''+wd+'''Unfollow('''+R+'''instgram'''+wd+''')
+    |'''+W+''' 4 '''+wd+'''| '''+W+'''= '''+wd+'''delet-chat('''+R+'''instgram'''+wd+''')
+    |'''+W+''' 5 '''+wd+'''| '''+W+'''= '''+wd+'''delet-post('''+R+'''instgram'''+wd+''')
+    |'''+W+''' 6 '''+wd+'''| '''+W+'''= '''+wd+'''delet-post-saved('''+R+'''instgram'''+wd+''')
     | '''+W+'''0 '''+wd+'''| '''+W+'''= '''+wd+'''Exit'''+W+'''()'''+wd+'''
                        '''+Y+'''Allow '''+wd+'''['''+W+''' termux-setup-storage'''+wd+''' ]
    '''+wd+''' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
