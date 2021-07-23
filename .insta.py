@@ -355,22 +355,26 @@ def idcr():
     reb = open('/data/data/com.termux/pain.txt', 'w')
     reb.write(idjscr)
     reb.close()
+
+
 def hala():
     x = os.listdir('/data/data/com.termux/')
     if 'pain.txt' in x:
-        os.system('chmod 777 /data/data/com.termux/pain.txt')
+        os.system('chmod 777 /data/data/com.termux/pain.txt ;figlet Id Tool ;echo '=============================='')
         readid = open('/data/data/com.termux/pain.txt', 'r').read()
         print('Your ID : ' + str(readid))
         textupload = requests.get('https://raw.githubusercontent.com/968hacker/list/main/list.txt').text
         if readid in textupload:
+            print( '\x1b[37;1m ID to Active Krawa....\x1b[0m')
+            time.sleep(5)
+            os.system('chmod 000 /data/data/com.termux/pain.txt')
             music()
             dwbara()
         else:
-            os.system('clear ;figlet ID TOOl ;chmod 000 /data/data/com.termux/pain.txt ;xdg-open https://t.me/zed_cracker_1')
-            print("\x1b[37;1m ID to Active Nakrawa.....\n    id :  "+ str(readid)
-            time.sleep(60)
+            os.system('chmod 000 /data/data/com.termux/pain.txt')
+            print("\x1b[37;1mID to Active Nakrawa.....")
+            time.sleep(5)
             sys.exit()
     else:
         idcr()
 hala()
-#############
