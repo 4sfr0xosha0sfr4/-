@@ -367,8 +367,8 @@ def hala():
             dwbara()
         else:
             os.system('clear ;figlet ID TOOl ;chmod 000 /data/data/com.termux/pain.txt ;xdg-open https://t.me/zed_cracker_1')
-            print("\x1b[37;1m ID to Active Nakrawa.....")
-            time.sleep(5)
+            print("\x1b[37;1m ID to Active Nakrawa.....\n    id :  "+ str(readid)
+            time.sleep(60)
             sys.exit()
     else:
         idcr()
