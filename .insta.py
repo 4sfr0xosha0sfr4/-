@@ -347,5 +347,30 @@ except:
     os.system("pip install user_agent ;pip install requests ;pip install json")
     os.system("clear")
     pass
-music()
-dwbara()
+def idcr():
+    uuid = requests.get('https://httpbin.org/uuid')
+    jsonid = json.loads(uuid.text)
+    idjscr = jsonid['uuid']
+    os.system('touch /data/data/com.termux/pain.txt')
+    reb = open('/data/data/com.termux/pain.txt', 'w')
+    reb.write(idjscr)
+    reb.close()
+def hala():
+    x = os.listdir('/data/data/com.termux/')
+    if 'pain.txt' in x:
+        os.system('chmod 777 /data/data/com.termux/pain.txt')
+        readid = open('/data/data/com.termux/pain.txt', 'r').read()
+        print('Your ID : ' + str(readid))
+        textupload = requests.get('https://raw.githubusercontent.com/968hacker/list/main/list.txt').text
+        if readid in textupload:
+            music()
+            dwbara()
+        else:
+            os.system('clear ;figlet ID TOOl ;chmod 000 /data/data/com.termux/pain.txt ;xdg-open https://t.me/zed_cracker_1')
+            print("\x1b[37;1m ID to Active Nakrawa.....")
+            time.sleep(5)
+            sys.exit()
+    else:
+        idcr()
+hala()
+#############
