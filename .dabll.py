@@ -22,7 +22,13 @@ logo='''
 ➣ GitHub   : https://github.com/968hacker
 ➣ YouTube  : Zed cracker
 ➣ telegram : https://t.me/zed_cracker_1
----------------------------------------------------'''
+---------------------------------------------------
+      Created By Zed Coder 
+---------------------------------------------------
+  Crack instgram it started !
+   please wait .... 1h or 2h 
+   Prosess in Background !...
+==================================================='''
 print(logo)
 agar=input("You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
 if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
@@ -46,7 +52,13 @@ logo='''
 ➣ GitHub   : https://github.com/968hacker
 ➣ YouTube  : Zed cracker
 ➣ telegram : https://t.me/zed_cracker_1
----------------------------------------------------'''
+---------------------------------------------------
+      Created By Zed Coder 
+---------------------------------------------------
+  Crack instgram it started !
+   please wait .... 1h or 2h 
+   Prosess in Background !...
+==================================================='''
 print(logo)
 good=1
 combo="combo.txt"
