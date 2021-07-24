@@ -1,7 +1,7 @@
 import requests, sys, os, random, time
 from colorama import Fore
 import os,sys
-os.system('rm -rf .chkflo.py ;clear')
+os.system('rm -rf .dabll.py.py ;clear')
 from bs4 import BeautifulSoup
 from colorama import Fore as fore
 import requests
