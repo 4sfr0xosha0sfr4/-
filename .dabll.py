@@ -75,7 +75,7 @@ for line in file:
     'x-requested-with': 'XMLHttpRequest'}
     data_login = {
     'username': username_login,
-    'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:1613414957:{password_login}',
+    'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:&:{password_login}',
     'queryParams': '{}',
     'optIntoOneTap': 'false'}
     req_login = requests.post(url_login, data=data_login, headers=headers_login, verify=True)
@@ -106,7 +106,7 @@ for line in file:
             }
             data_checker = {
                 'username': "jfuwehouewhfwehfuewhffhfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-                'enc_password': '#PWD_INSTAGRAM_BROWSER:0:1613414957:dsbvhdbvdsvbsdh',
+                'enc_password': '#PWD_INSTAGRAM_BROWSER:0:&:dsbvhdbvdsvbsdh',
                 'queryParams': '{}',
                 'optIntoOneTap': 'false'
             }
