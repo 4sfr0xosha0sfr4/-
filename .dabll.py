@@ -136,10 +136,9 @@ def hamwy():
                     'username': "jfuwehouewhfwehfuewhffhfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
                     'enc_password': '#PWD_INSTAGRAM_BROWSER:0:1613414957:dsbvhdbvdsvbsdh',
                     'queryParams': '{}',
-                    'optIntoOneTap': 'false'
-                }
-			req = requests.post(url_checker, data=data_checker, headers=headers_checker).text
-			if '"user":false' in req:
+                    'optIntoOneTap': 'false'}
+                req = requests.post(url_checker, data=data_checker, headers=headers_checker).text
+                if '"user":false' in req:
 				url_get_info = 'https://www.instagram.com/accounts/edit/?__a=1'
 				headers_get_info = {
                         'accept': '*/*',
