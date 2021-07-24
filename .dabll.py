@@ -49,7 +49,7 @@ logo='''
 ---------------------------------------------------'''
 print(logo)
 good=1
-combo=input("Path File >>> ")
+combo="combo.txt"
 file = open(combo,'r').read().splitlines()
 for line in file:
     username_login = line.split(':')[0]
