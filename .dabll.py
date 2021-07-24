@@ -65,6 +65,7 @@ def hamwy():
     combo="combo.txt"
     file = open(combo,'r').read().splitlines()
     for line in file:
+        import time
         global bad, timeout, hits, error, checkpoint
         username_login = line.split(':')[0]
         password_login = line.split(':')[1]
