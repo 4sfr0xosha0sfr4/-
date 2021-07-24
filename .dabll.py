@@ -61,7 +61,7 @@ if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 else:
 	pass
 	print('    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-combo=input("     Path File >>> ")
+combo="combo.txt"
 file = open(combo,'r').read().splitlines()
 for line in file:
     username_login = line.split(':')[0]
