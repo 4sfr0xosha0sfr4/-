@@ -306,7 +306,6 @@ def dwbara():
     |'''+W+''' 4 '''+wd+'''| '''+W+'''= '''+wd+'''delet-chat('''+R+'''instgram'''+wd+''')
     |'''+W+''' 5 '''+wd+'''| '''+W+'''= '''+wd+'''delet-post('''+R+'''instgram'''+wd+''')
     |'''+W+''' 6 '''+wd+'''| '''+W+'''= '''+wd+'''delet-post-saved('''+R+'''instgram'''+wd+''')
-    |'''+W+''' 7 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram-follow-following-post-facebook-tiktok'''+wd+''')\n    ('''+G+'''Combo'''+wd+'''='''+Y+'''Insert'''+wd+''')
     | '''+W+'''0 '''+wd+'''| '''+W+'''= '''+wd+'''Exit'''+W+'''()'''+wd+'''
                        '''+Y+'''Allow '''+wd+'''['''+W+''' termux-setup-storage'''+wd+''' ]
    '''+wd+''' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -336,9 +335,6 @@ def dwbara():
     	import wget, os
     	wget.download("https://raw.githubusercontent.com/sfr404sfrzed/pewist/main/.unvediosaved.py")
     	os.system("python .unvediosaved.py")
-    elif ia=="7":
-        wget.download("https://raw.githubusercontent.com/sfr404sfrzed/-/main/.chkflo.py")
-        os.system("python .chkflo.py")
     elif ia=="0":
         print(" Exit !")
         os.sys.exit()
