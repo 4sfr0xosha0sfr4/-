@@ -7,7 +7,23 @@ from colorama import Fore as fore
 import requests
 import subprocess
 import json
-
+logo='''
+██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
+▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
+▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
+▒██▄█▓▒ ▒▒██   ██░░██░  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒
+▒██▒ ░  ░░  ████▓▒░░██░▒██████▒▒░ ████▓▒░▒██░  ▓██░
+▒▓▒░ ░  ░░ ▒░▒░▒░ ░▓  ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ 
+░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
+░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
+            ░ ░   ░        ░      ░ ░           ░ 
+---------------------------------------------------
+➣ Author   : Zed Coder
+➣ GitHub   : https://github.com/968hacker
+➣ YouTube  : Zed cracker
+➣ telegram : https://t.me/zed_cracker_1
+---------------------------------------------------'''
+print(logo)
 agar=input("You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
 if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 	ID=input("Your ID Telegram :")
@@ -15,7 +31,23 @@ if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 else:
 	pass
 os.system("clear")
-
+logo='''
+██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
+▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
+▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
+▒██▄█▓▒ ▒▒██   ██░░██░  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒
+▒██▒ ░  ░░  ████▓▒░░██░▒██████▒▒░ ████▓▒░▒██░  ▓██░
+▒▓▒░ ░  ░░ ▒░▒░▒░ ░▓  ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ 
+░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
+░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
+            ░ ░   ░        ░      ░ ░           ░ 
+---------------------------------------------------
+➣ Author   : Zed Coder
+➣ GitHub   : https://github.com/968hacker
+➣ YouTube  : Zed cracker
+➣ telegram : https://t.me/zed_cracker_1
+---------------------------------------------------'''
+print(logo)
 good=1
 combo=input("Path File >>> ")
 file = open(combo,'r').read().splitlines()
