@@ -299,7 +299,7 @@ def dwbara():
     '''+R+'''    [ Welcome to my script, Auther: @i4m_zed ]
    '''+wd+''' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 '''+wd+'''
-    |'''+W+''' 1 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Number or email:pass'''+wd+''')
+    |'''+W+''' 1 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Insert'''+wd+''')
     |'''+W+''' 2 '''+wd+'''| '''+W+'''= '''+wd+'''Checker('''+R+'''instgram'''+wd+''')-('''+G+'''Combo'''+wd+'''='''+Y+'''Number'''+wd+'''-'''+G+'''Random'''+wd+''')
     |'''+W+''' 3 '''+wd+'''| '''+W+'''= '''+wd+'''Unfollow('''+R+'''instgram'''+wd+''')
     |'''+W+''' 4 '''+wd+'''| '''+W+'''= '''+wd+'''delet-chat('''+R+'''instgram'''+wd+''')
