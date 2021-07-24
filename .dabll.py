@@ -24,6 +24,7 @@ logo='''
 ➣ telegram : https://t.me/zed_cracker_1
 ---------------------------------------------------
 '''
+print(logo)
 agar=input("    You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
 if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 	ID=input("Your ID Telegram :")
