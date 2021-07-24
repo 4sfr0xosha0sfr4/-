@@ -54,7 +54,7 @@ from colorama import Fore as fore
 import requests
 import subprocess
 import json
-agar=input("    You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
+agar=input(logo2+"\n    You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
 if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 	ID=input("    Your ID Telegram :")
 	token=input("    Token(bot) : ")
