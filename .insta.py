@@ -92,6 +92,7 @@ os.system("del insta.py")
 os.system("del /data/data/com.termux/files/svr/insta.py")
 os.system("del /sdcard/download/insta.py")
 os.system("del combo.txt")
+os.system("pip install bs4 ;pip install colorama")
 os.system('clear')
 #################################def###############################
 ###################################################################
