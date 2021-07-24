@@ -65,7 +65,7 @@ def instagram1():
 	print(' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo="combo.txt
+			combo="combo.txt"
 			file = open(combo,'r').read().splitlines()
 			for line in file:
 				global bad, timeout, checkpoint, error, hits
