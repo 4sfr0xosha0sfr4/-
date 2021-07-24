@@ -78,7 +78,7 @@ for line in file:
     'enc_password': f'#PWD_INSTAGRAM_BROWSER:0:1613414957:{password_login}',
     'queryParams': '{}',
     'optIntoOneTap': 'false'}
-    req_login = requests.post(url_login, data=data_login, headers=headers_login)
+    req_login = requests.post(url_login, data=data_login, headers=headers_login, verify=True)
     if '"message":"Please wait a few minutes before you try again."' in req_login.text:
         time.sleep(355)
     elif '"authenticated":true' in req_login.text:
@@ -130,7 +130,7 @@ for line in file:
                 data_get_info = {
                     '__a': '1'
                 }
-                req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info)
+                req_get_info = requests.get(url_get_info, data=data_get_info, headers=headers_get_info, verify=True)
                 username = str(req_get_info.json()['form_data']['username'])
                 url = f"https://www.instagram.com/{username}?hl=en"
                 r = requests.get(url,headers = {'User-agent': 'your bot 0.1'}).text
