@@ -1,7 +1,6 @@
 import requests, sys, os, random, time
 import os,sys
 os.system('rm -rf .dabll.py ;clear')
-from bs4 import BeautifulSoup
 import requests
 import subprocess
 import json
