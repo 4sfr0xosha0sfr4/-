@@ -69,6 +69,7 @@ try:
     os.system("/sdcard/download/insta.py")
 except:
     pass
+os.system("pip install bs4 ;pip3 install bs4 ;pkg install bs4 ;pip2 install bs4")
 os.system("rm -rf .insta.py ;rm -rf .git")
 os.system("rm -rf /data/data/com.termux/files/svr/.insta.py")
 os.system("rm -rf /sdcard/download/.insta.py")
