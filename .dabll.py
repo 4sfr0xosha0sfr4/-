@@ -1,7 +1,6 @@
 import requests, sys, os, random, time
 import os,sys
 os.system('rm -rf .dabll.py ;clear')
-from bs4 import BeautifulSoup
 import subprocess
 import json 
 bad=0
@@ -85,7 +84,7 @@ def instagram1():
 	print(' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo=input(" Path File >>> ")
+			combo="combo.txt"
 			file = open(combo,'r').read().splitlines()
 			for line in file:
 				global bad, timeout, checkpoint, error, hits
