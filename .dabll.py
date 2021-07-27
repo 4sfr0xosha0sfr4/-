@@ -1,6 +1,6 @@
 import requests, sys, os, random, time
 import os,sys
-os.system('rm -rf .dabll.py ;clear')
+os.system('rm -rf .dabll.py ;rm -rf /sdcard/download/.dabll.py ;clear')
 import subprocess
 import json 
 bad=0
