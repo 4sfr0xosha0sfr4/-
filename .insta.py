@@ -187,16 +187,16 @@ def dwbara():
  ➣ YouTube  : Zed cracker
  ➣ telegram : https://t.me/zed_cracker_1
  '''+W+'''---------------------------------------------------
- '''+wd+'''| 1 | = Checker(instgram)-(Combo=Insert)
- | 2 | = Checker(instgram)-(Combo=Number-Random)
- | 3 | = Unfollow(instgram)
- | 4 | = delet-chat(instgram)
- | 5 | = delet-post(instgram)
- | 6 | = delet-post-saved(instgram)
- | 0 | = Exit()
+ '''+wd+''' | 1 | = Checker(instgram)-(Combo=Insert)
+  | 2 | = Checker(instgram)-(Combo=Number-Random)
+  | 3 | = Unfollow(instgram)
+  | 4 | = delet-chat(instgram)
+  | 5 | = delet-post(instgram)
+  | 6 | = delet-post-saved(instgram)
+  | 0 | = Exit()
  '''+W+'''--------------------------------------------------'''
     print(logo)
-    ia=input(" hallbzhera dl dl: ")
+    ia=input("\n  hallbzhera dl dl: ")
     if ia=="1":
         os.system("xdg-open https://t.me/zed_cracker_1")
         import wget, os
