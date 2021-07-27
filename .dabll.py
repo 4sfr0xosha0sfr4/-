@@ -24,7 +24,12 @@ Y = "\033[33;1m"
 G = "\033[32m"    
 W = "\033[0;1m" 
 R = "\033[31m"  
-logo2='''
+bad=0
+timeout=0
+hits=0
+checkpoint=0
+error=0
+logo1=G+'''
  ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
  ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
  ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
@@ -34,23 +39,35 @@ logo2='''
  ░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
  ░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
              ░ ░   ░        ░      ░ ░           ░ 
- ---------------------------------------------------
- ➣ Author   : Zed Coder
+'''+W+''' ---------------------------------------------------
+'''+wd+''' ➣ Author   : Zed Coder
  ➣ GitHub   : https://github.com/968hacker
  ➣ YouTube  : Zed cracker
  ➣ telegram : https://t.me/zed_cracker_1
- ---------------------------------------------------
-       Created By Zed Coder 
- ---------------------------------------------------
-   Crack instgram it started !
-    please wait .... 1h or 2h 
-    Prosess in Background !...
- ==================================================='''
-bad=0
-timeout=0
-hits=0
-checkpoint=0
-error=0
+ '''+W+'''---------------------------------------------------'''
+logo2=G+'''
+ ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
+ ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
+ ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
+ ▒██▄█▓▒ ▒▒██   ██░░██░  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒
+ ▒██▒ ░  ░░  ████▓▒░░██░▒██████▒▒░ ████▓▒░▒██░  ▓██░
+ ▒▓▒░ ░  ░░ ▒░▒░▒░ ░▓  ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ 
+ ░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
+ ░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
+             ░ ░   ░        ░      ░ ░           ░ 
+'''+W+''' ---------------------------------------------------
+ '''+wd+'''➣ Author   : Zed Coder
+ ➣ GitHub   : https://github.com/968hacker
+ ➣ YouTube  : Zed cracker
+ ➣ telegram : https://t.me/zed_cracker_1
+'''+W+''' ---------------------------------------------------
+
+'''+W+''' ---------------------------------------------------
+ '''+wd+'''  Crack instgram it started !
+    please wait .. 1h or 2h 
+    Prosess in Background !...... 
+'''+W+''' ---------------------------------------------------
+ '''
 def instagram1():
 	import json, requests, user_agent,os ,sys, time, datetime
 	import requests
@@ -58,7 +75,7 @@ def instagram1():
 	from datetime import datetime
 	r = requests.session()
 	import os, sys
-	print(logo2)
+	print(logo1)
 	agar=input(" You Want To Bot TELEGRAM Your Results (y,yes or n,no) ")
 	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
 		ID=input(" Your ID Telegram :")
@@ -138,3 +155,4 @@ def instagram1():
 			print(" [ ! comboka la mobilet a nia ean Path halaya ! ]")
 	loopPp()
 	print("\n\n   It's Over !\n  File saved : /sdcard/[hits or checkpoint].txt")
+instagram1()
