@@ -86,7 +86,7 @@ for do in range(1):
     G = "\033[32m"    
     W = "\033[0;1m" 
     R = "\033[31m"  
-    sss="combo.txt"
+    sss=input(" Path File : ")
     file=open(sss,"r").read().splitlines()
     for line in file:
         username_login = line.split(':')[0]
