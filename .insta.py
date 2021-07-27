@@ -7,6 +7,20 @@ import subprocess
 import time, random
 from requests.api import request
 import os,sys
+wd = "\033[90;1m" 
+GL = "\033[96;1m"
+BB = "\033[34;1m"
+YY = "\033[33;1m"
+GG = "\033[32;1m"
+WW = "\033[0;1m" 
+RR = "\033[31;1m" 
+CC = "\033[36;1m" 
+B = "\033[34m"   
+Y = "\033[33;1m"    
+G = "\033[32m"    
+W = "\033[0;1m" 
+R = "\033[31m"   
+C = "\033[36;1m"
 ######################################
 loglog='''
 ▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ █    ██ ▒██   ██▒    ▄▄▄       ██▓███   ██▓
@@ -19,7 +33,7 @@ loglog='''
   ░         ░     ░░   ░ ░      ░    ░░░ ░ ░  ░    ░       ░   ▒   ░░        ▒ ░
             ░  ░   ░            ░      ░      ░    ░           ░  ░          ░  
                                                                             
-                                                                            \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                            \n'''+W+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 '''
 ##############################
 WTF="010101"
@@ -93,21 +107,8 @@ from user_agent import generate_user_agent
 from datetime import datetime
 r = requests.session()
 os.system("clear")
-wd = "\033[90;1m" 
-GL = "\033[96;1m"
-BB = "\033[34;1m"
-YY = "\033[33;1m"
-GG = "\033[32;1m"
-WW = "\033[0;1m" 
-RR = "\033[31;1m" 
-CC = "\033[36;1m" 
-B = "\033[34m"   
-Y = "\033[33;1m"    
-G = "\033[32m"    
-W = "\033[0;1m" 
-R = "\033[31m"   
-C = "\033[36;1m"
-lgo='''
+
+lgo=G+'''
 
     ███▄ ▄███▓ █    ██   ██████  ██▓ ▄████▄  
 ▓██▒▀█▀ ██▒ ██  ▓██▒▒██    ▒ ▓██▒▒██▀ ▀█  
@@ -119,15 +120,15 @@ lgo='''
 ░      ░    ░░░ ░ ░ ░  ░  ░   ▒ ░░        
         ░      ░           ░   ░  ░ ░      
                                     ░     
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-dabet [Termux Api Dabgrit bo Krdnaway Music]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    1- Sana Barznji 
+'''+W+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'''+wd+'''dabet [Termux Api Dabgrit bo Krdnaway Music]
+'''+W+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ '''+wd+'''   1- Sana Barznji 
     2- Navid Zardi 
     3- Hardi Salami 
     4- English
     0- Gorani m Nawet !
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'''+W+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 '''
 def music():
     import os, sys, time, random
@@ -167,7 +168,7 @@ def music():
         music()
 def dwbara():
     import json, requests, user_agent, os ,sys, time, datetime
-    logo='''
+    logo=G+'''
  ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
  ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
  ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
@@ -177,20 +178,20 @@ def dwbara():
  ░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
  ░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
              ░ ░   ░        ░      ░ ░           ░ 
- ---------------------------------------------------
- ➣ Author   : Zed Coder
+ '''+W+'''---------------------------------------------------
+ '''+wd+'''➣ Author   : Zed Coder
  ➣ GitHub   : https://github.com/968hacker
  ➣ YouTube  : Zed cracker
  ➣ telegram : https://t.me/zed_cracker_1
- ---------------------------------------------------
- | 1 | = Checker(instgram)-(Combo=Insert)
+ '''+W+'''---------------------------------------------------
+ '''+wd+'''| 1 | = Checker(instgram)-(Combo=Insert)
  | 2 | = Checker(instgram)-(Combo=Number-Random)
  | 3 | = Unfollow(instgram)
  | 4 | = delet-chat(instgram)
  | 5 | = delet-post(instgram)
  | 6 | = delet-post-saved(instgram)
  | 0 | = Exit()
- --------------------------------------------------'''
+ '''+W+'''--------------------------------------------------'''
     print(logo)
     ia=input(" hallbzhera dl dl: ")
     if ia=="1":
