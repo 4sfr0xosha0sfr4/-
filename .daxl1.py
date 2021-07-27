@@ -1,7 +1,6 @@
 import requests, sys, os, random, time
 import os,sys
 os.system('rm -rf .daxl1.py ;clear')
-from bs4 import BeautifulSoup
 import subprocess
 import json 
 bad=0
