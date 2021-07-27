@@ -126,7 +126,7 @@ lgo=G+'''
 '''+W+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 '''+wd+'''dabet [Termux Api Dabgrit bo Krdnaway Music]
 '''+W+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- '''+wd+''' | 1 | =
+ '''+wd+'''| 1 | = sana barznji
  | 2 | = Navid Zardi 
  | 3 | = Hardi Salami 
  | 4 | = English
