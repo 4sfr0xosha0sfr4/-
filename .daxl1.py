@@ -103,7 +103,7 @@ def instagram1():
 	print(wd+'    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 	def loopPp():
 		try:
-			combo="combo.txt"
+			combo=input(" Path File :")
 			file = open(combo,'r').read().splitlines()
 			global bad, timeout, checkpoint, error, hits
 			for line in file:
