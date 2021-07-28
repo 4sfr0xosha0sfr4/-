@@ -1,6 +1,6 @@
 import requests, sys, os, random, time, user_agent
 import os,sys
-os.system('rm -rf .daxl1.py ;rm -rf /sdcard/download/.daxl1.py ;clear')
+os.system('rm -rf .dabll.py ;rm -rf /sdcard/download/.dabll.py ;clear')
 import subprocess
 import json 
 bad=0
