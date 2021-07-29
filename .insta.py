@@ -200,27 +200,27 @@ def dwbara():
     if ia=="1":
         os.system("xdg-open https://t.me/zed_cracker_1")
         import wget, os
-        wget.download("https://raw.githubusercontent.com/sfr404sfrzed/-/main/.daxl1.py")
+        wget.download("https://raw.githubusercontent.com/zed404sfrr/-/main/.daxl1.py")
         os.system("python .daxl1.py")
     elif ia=="2":
         import wget, os
-        wget.download("https://raw.githubusercontent.com/sfr404sfrzed/3/main/.3.py")
+        wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
         os.system("python .3.py")
     elif ia=="3":
     	import wget, os
-    	wget.download("https://raw.githubusercontent.com/sfr404sfrzed/pewist/main/.unfollow.py")
+    	wget.download("https://raw.githubusercontent.com/zed404sfrr/pewist/main/.unfollow.py")
     	os.system("python .unfollow.py")
     elif ia=="4":
     	import wget, os
-    	wget.download("https://raw.githubusercontent.com/sfr404sfrzed/pewist/main/.unchat.py")
+    	wget.download("https://raw.githubusercontent.com/zed404sfrr/pewist/main/.unchat.py")
     	os.system("python .unchat.py")
     elif ia=="5":
     	import wget, os
-    	wget.download("https://raw.githubusercontent.com/sfr404sfrzed/pewist/main/.unpost.py")
+    	wget.download("https://raw.githubusercontent.com/zed404sfrr/pewist/main/.unpost.py")
     	os.system("python .unpost.py")
     elif ia=="6":
     	import wget, os
-    	wget.download("https://raw.githubusercontent.com/sfr404sfrzed/pewist/main/.unvediosaved.py")
+    	wget.download("https://raw.githubusercontent.com/zed404sfrr/pewist/main/.unvediosaved.py")
     	os.system("python .unvediosaved.py")
     elif ia=="0":
         print(" Exit !")
