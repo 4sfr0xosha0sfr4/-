@@ -126,7 +126,7 @@ def instagram1():
                         'enc_password': "#PWD_INSTAGRAM_BROWSER:0:"+str(time_now)+":"+str(pasw),
                         'queryParams': {},
                         'optIntoOneTap': 'false',}
-				login = requests.post(url,headers=head,data=data,verify=True).text
+				login = requests.post(url,headers=head,data=data,allow_redirects=True,verify=True).text
 				try:
 					if '"authenticated":false' in login:
 						os.system("clear")
