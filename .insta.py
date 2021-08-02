@@ -21,7 +21,23 @@ G = "\033[32m"
 W = "\033[0;1m" 
 R = "\033[31m"   
 C = "\033[36;1m"
-######################################
+######################################\
+logo1=G+'''
+ ██▓███   ▒█████   ██▓  ██████  ▒█████   ███▄    █ 
+ ▓██░  ██▒▒██▒  ██▒▓██▒▒██    ▒ ▒██▒  ██▒ ██ ▀█   █ 
+ ▓██░ ██▓▒▒██░  ██▒▒██▒░ ▓██▄   ▒██░  ██▒▓██  ▀█ ██▒
+ ▒██▄█▓▒ ▒▒██   ██░░██░  ▒   ██▒▒██   ██░▓██▒  ▐▌██▒
+ ▒██▒ ░  ░░  ████▓▒░░██░▒██████▒▒░ ████▓▒░▒██░  ▓██░
+ ▒▓▒░ ░  ░░ ▒░▒░▒░ ░▓  ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ 
+ ░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
+ ░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
+             ░ ░   ░        ░      ░ ░           ░ 
+'''+W+''' ---------------------------------------------------
+'''+wd+'''   ➣ Author   : Zed Coder
+     ➣ GitHub   : https://github.com/968hacker
+     ➣ YouTube  : Zed cracker
+     ➣ telegram : https://t.me/zed_cracker_1
+ '''+W+'''---------------------------------------------------'''
 loglog='''
 ▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ █    ██ ▒██   ██▒    ▄▄▄       ██▓███   ██▓
 ▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒ ██  ▓██▒▒▒ █ █ ▒░   ▒████▄    ▓██░  ██▒▓██▒
@@ -181,19 +197,19 @@ def dwbara():
  ░▒ ░       ░ ▒ ▒░  ▒ ░░ ░▒  ░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░
  ░░       ░ ░ ░ ▒   ▒ ░░  ░  ░  ░ ░ ░ ▒     ░   ░ ░ 
              ░ ░   ░        ░      ░ ░           ░ 
- '''+W+'''---------------------------------------------------
- '''+wd+'''➣ Author   : Zed Coder
- ➣ GitHub   : https://github.com/968hacker
- ➣ YouTube  : Zed cracker
- ➣ telegram : https://t.me/zed_cracker_1
+'''+W+''' ---------------------------------------------------
+'''+wd+'''   ➣ Author   : Zed Coder
+     ➣ GitHub   : https://github.com/968hacker
+     ➣ YouTube  : Zed cracker
+     ➣ telegram : https://t.me/zed_cracker_1
  '''+W+'''---------------------------------------------------
  '''+wd+''' | 1 | = Checker(instgram)-(Combo=Insert)
-  | 2 | = Checker(instgram)-(Combo=Number-Random)
-  | 3 | = Unfollow(instgram)
-  | 4 | = delet-chat(instgram)
-  | 5 | = delet-post(instgram)
-  | 6 | = delet-post-saved(instgram)
-  | 0 | = Exit()
+   | 2 | = Checker(instgram)-(Combo=Number-Random)
+   | 3 | = Unfollow(instgram)
+   | 4 | = delet-chat(instgram)
+   | 5 | = delet-post(instgram)
+   | 6 | = delet-post-saved(instgram)
+   | 0 | = Exit()
  '''+W+'''--------------------------------------------------'''
     print(logo)
     ia=input("\n  hallbzhera dl dl: ")
@@ -203,9 +219,42 @@ def dwbara():
         wget.download("https://raw.githubusercontent.com/zed404sfrr/-/main/.daxl1.py")
         os.system("python .daxl1.py")
     elif ia=="2":
-        import wget, os
-        wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
-        os.system("python .3.py")
+        print(logo1)
+        print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6-jordan\n   7- kuwait \n   8- omen\n   9- qatar\n   10- United Arab Emirates  '''+W+'''--------------------------------------------------''')
+        def solo():
+            wlat=input(" Halbzhera dl dl : ")
+            if wlat=="1":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
+                os.system("python .3.py")
+            elif wlat=="2":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Israel.py")
+                os.system("python .Israel.py")
+            elif wlat=="3":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Lebanon.py")
+                os.system("python .Lebanon.py")
+            elif wlat=="4":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Saudi.py")
+                os.system("python .Saudi.py")
+            elif wlat=="5":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Syria.py")
+                os.system("python .Syria.py")
+            elif wlat=="6":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.jordan.py")
+                os.system("python .jordan.py")
+            elif wlat=="7":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.kuwait.py")
+                os.system("python .kuwait.py")
+            elif wlat=="8":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.oman.py")
+                os.system("python .oman.py")
+            elif wlat=="9":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.qatar.py")
+                os.system("python .qatar.py")
+            elif wlat=="10":
+                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.u-a.py")
+                os.system("python .u-a.py.py")
+            else:solo()
+        solo()
     elif ia=="3":
     	import wget, os
     	wget.download("https://raw.githubusercontent.com/zed404sfrr/pewist/main/.unfollow.py")
@@ -246,6 +295,7 @@ def idcr():
 
 
 def hala():
+    os.system("clear")
     x = os.listdir('/data/data/com.termux/')
     if 'pain.txt' in x:
         os.system('chmod 777 /data/data/com.termux/pain.txt ;figlet Id Tool ;echo ==============================')
@@ -265,4 +315,5 @@ def hala():
             sys.exit()
     else:
         idcr()
+        hala()
 hala()
