@@ -219,43 +219,44 @@ def dwbara():
         wget.download("https://raw.githubusercontent.com/zed404sfrr/-/main/.daxl1.py")
         os.system("python .daxl1.py")
     elif ia=="2":
-        os.system("clear")
-        print(logo1)
-        print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6- jordan\n   7- kuwait \n   8- omen\n   9- qatar\n   10- United Arab Emirates \n '''+W+'''--------------------------------------------------''')
-        def solo():
-            wlat=input("  Halbzhera dl dl : ")
-            if wlat=="1":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
-                os.system("python .3.py")
-            elif wlat=="2":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Israel.py")
-                os.system("python .Israel.py")
-            elif wlat=="3":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Lebanon.py")
-                os.system("python .Lebanon.py")
-            elif wlat=="4":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Saudi.py")
-                os.system("python .Saudi.py")
-            elif wlat=="5":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Syria.py")
-                os.system("python .Syria.py")
-            elif wlat=="6":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.jordan.py")
-                os.system("python .jordan.py")
-            elif wlat=="7":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.kuwait.py")
-                os.system("python .kuwait.py")
-            elif wlat=="8":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.oman.py")
-                os.system("python .oman.py")
-            elif wlat=="9":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.qatar.py")
-                os.system("python .qatar.py")
-            elif wlat=="10":
-                wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.u-a.py")
-                os.system("python .u-a.py.py")
-            else:solo()
-        solo()
+    	import os,sys,wget
+    	os.system("clear")
+    	print(logo1)
+    	print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6- jordan\n   7- kuwait \n   8- omen\n   9- qatar\n   10- United Arab Emirates \n '''+W+'''--------------------------------------------------''')
+    	def solo():
+    		wlat=input("  Halbzhera dl dl : ")
+    		if wlat=="1":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
+    			os.system("python .3.py")
+    		elif wlat=="2":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Israel.py")
+    			os.system("python .Israel.py")
+    		elif wlat=="3":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Lebanon.py")
+    			os.system("python .Lebanon.py")
+    		elif wlat=="4":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Saudi.py")
+    			os.system("python .Saudi.py")
+    		elif wlat=="5":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Syria.py")
+    			os.system("python .Syria.py")
+    		elif wlat=="6":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.jordan.py")
+    			os.system("python .jordan.py")
+    		elif wlat=="7":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.kuwait.py")
+    			os.system("python .kuwait.py")
+    		elif wlat=="8":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.oman.py")
+    			os.system("python .oman.py")
+    		elif wlat=="9":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.qatar.py")
+    			os.system("python .qatar.py")
+    		elif wlat=="10":
+    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.u-a.py")
+    			os.system("python .u-a.py.py")
+    		else:solo()
+    	solo()
     elif ia=="3":
     	import wget, os
     	wget.download("https://raw.githubusercontent.com/zed404sfrr/pewist/main/.unfollow.py")
