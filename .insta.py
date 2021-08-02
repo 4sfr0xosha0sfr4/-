@@ -222,7 +222,7 @@ def dwbara():
     	import os,sys,wget
     	os.system("clear")
     	print(logo1)
-    	print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6- jordan\n   7- omen\n   8- qatar\n   9- United Arab Emirates \n '''+W+'''--------------------------------------------------''')
+    	print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6- jordan\n   7- United Arab Emirates \n '''+W+'''--------------------------------------------------''')
     	def solo():
     		wlat=input("  Halbzhera dl dl : ")
     		if wlat=="1":
@@ -244,12 +244,6 @@ def dwbara():
     			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.jordan.py")
     			os.system("python .jordan.py")
     		elif wlat=="7":
-    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.oman.py")
-    			os.system("python .oman.py")
-    		elif wlat=="8":
-    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.qatar.py")
-    			os.system("python .qatar.py")
-    		elif wlat=="9":
     			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.u-a.py")
     			os.system("python .u-a.py.py")
     		else:solo()
