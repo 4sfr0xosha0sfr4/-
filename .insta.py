@@ -219,10 +219,11 @@ def dwbara():
         wget.download("https://raw.githubusercontent.com/zed404sfrr/-/main/.daxl1.py")
         os.system("python .daxl1.py")
     elif ia=="2":
+        os.system("clear")
         print(logo1)
-        print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6-jordan\n   7- kuwait \n   8- omen\n   9- qatar\n   10- United Arab Emirates  '''+W+'''--------------------------------------------------''')
+        print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6- jordan\n   7- kuwait \n   8- omen\n   9- qatar\n   10- United Arab Emirates \n '''+W+'''--------------------------------------------------''')
         def solo():
-            wlat=input(" Halbzhera dl dl : ")
+            wlat=input("  Halbzhera dl dl : ")
             if wlat=="1":
                 wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
                 os.system("python .3.py")
