@@ -222,30 +222,21 @@ def dwbara():
     	import os,sys,wget
     	os.system("clear")
     	print(logo1)
-    	print('''   1- Iraq\n   2- Israel\n   3- Lebanon\n   4- Saudi Arabia\n   5- Syrian Arab Republic (Syria)\n   6- jordan\n   7- United Arab Emirates \n '''+W+'''--------------------------------------------------''')
+    	print('''   1- Iraq\n   2- Saudi Arabia\n   3- Syrian Arab Republic (Syria)\n   4- jordan \n '''+W+'''--------------------------------------------------''')
     	def solo():
     		wlat=input("  Halbzhera dl dl : ")
     		if wlat=="1":
     			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.3.py")
     			os.system("python .3.py")
     		elif wlat=="2":
-    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Israel.py")
-    			os.system("python .Israel.py")
-    		elif wlat=="3":
-    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Lebanon.py")
-    			os.system("python .Lebanon.py")
-    		elif wlat=="4":
     			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Saudi.py")
     			os.system("python .Saudi.py")
-    		elif wlat=="5":
+    		elif wlat=="3":
     			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.Syria.py")
     			os.system("python .Syria.py")
-    		elif wlat=="6":
+    		elif wlat=="4":
     			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.jordan.py")
     			os.system("python .jordan.py")
-    		elif wlat=="7":
-    			wget.download("https://raw.githubusercontent.com/zed404sfrr/3/main/.u-a.py")
-    			os.system("python .u-a.py.py")
     		else:solo()
     	solo()
     elif ia=="3":
